@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IRecordStatsFailureFn | d!nk DKPlugin API</title>
+	<title>IBasicResponse | d!nk DKPlugin API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,62 +59,93 @@
 					<a href="../modules/dk.html">dk</a>
 				</li>
 				<li>
-					<a href="dk.irecordstatsfailurefn.html">IRecordStatsFailureFn</a>
+					<a href="dk.ibasicresponse.html">IBasicResponse</a>
 				</li>
 			</ul>
-			<h1>Interface IRecordStatsFailureFn</h1>
+			<h1>Interface IBasicResponse</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>It&#39;s important to note that this failure function is not always called</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IRecordStatsFailureFn</span>
+						<span class="target">IBasicResponse</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="dk.icredentialsresponse.html" class="tsd-signature-type">ICredentialsResponse</a>
+							</li>
+							<li>
+								<a href="dk.ienterprisedetailsresponse.html" class="tsd-signature-type">IEnterpriseDetailsResponse</a>
+							</li>
+							<li>
+								<a href="dk.iopenpublicationfailureresponse.html" class="tsd-signature-type">IOpenPublicationFailureResponse</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel">
-				<h3 class="tsd-before-signature">Callable</h3>
-				<ul class="tsd-signatures tsd-kind-interface tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/record-stat.ts#L49">record-stat.ts:49</a></li>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ibasicresponse.html#cbid" class="tsd-kind-icon">cb<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ibasicresponse.html#message" class="tsd-kind-icon">message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ibasicresponse.html#result" class="tsd-kind-icon">result</a></li>
 							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>It&#39;s important to note that this failure function is not always called</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>result: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>contains a short string describing the result of the call</p>
-									</div>
-								</div>
-							</li>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="cbid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> cb<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">cb<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/basic-response.ts#L12">basic-response.ts:12</a></li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span></h4>
-					</li>
-				</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>cbId is the callbackIdentifier that was passed in, only present if
+							that callbackIdentifier was not empty</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="message" class="tsd-anchor"></a>
+					<h3>message</h3>
+					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/basic-response.ts#L7">basic-response.ts:7</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="result" class="tsd-anchor"></a>
+					<h3>result</h3>
+					<div class="tsd-signature tsd-kind-icon">result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/basic-response.ts#L6">basic-response.ts:6</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>result indicates if call was successful</p>
+						</div>
+					</div>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -154,9 +185,24 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="dk.ianalyticeventsuccessfn.html" class="tsd-kind-icon">IAnalytic<wbr>Event<wbr>Success<wbr>Fn</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
 						<a href="dk.ibasicresponse.html" class="tsd-kind-icon">IBasic<wbr>Response</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dk.ibasicresponse.html#cbid" class="tsd-kind-icon">cb<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dk.ibasicresponse.html#message" class="tsd-kind-icon">message</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dk.ibasicresponse.html#result" class="tsd-kind-icon">result</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="dk.icredentialsfailurefn.html" class="tsd-kind-icon">ICredentials<wbr>Failure<wbr>Fn</a>
 					</li>
@@ -211,13 +257,9 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="dk.ipublicationdetailssuccessfn.html" class="tsd-kind-icon">IPublication<wbr>Details<wbr>Success<wbr>Fn</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="dk.irecordstatsfailurefn.html" class="tsd-kind-icon">IRecord<wbr>Stats<wbr>Failure<wbr>Fn</a>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="dk.irecordstatssuccessfn.html" class="tsd-kind-icon">IRecord<wbr>Stats<wbr>Success<wbr>Fn</a>
 					</li>

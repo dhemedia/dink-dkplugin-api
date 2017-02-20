@@ -1,14 +1,14 @@
 module dk {
 
     /**
-      @param result is a message confirming the event was registered
+      @param result a json stringified IBasicResponse object
     */
     export interface IAnalyticEventSuccessFn {
         (result: string): null;
     }
 
     /**
-      @param result is an error message
+      @param result a json stringified IBasicResponse object
     */
     export interface IAnalyticEventFailureFn {
         (result: string): null;

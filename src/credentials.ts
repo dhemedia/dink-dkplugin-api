@@ -1,6 +1,6 @@
 module dk {
 
-    export interface ICredentialsResponse {
+    export interface ICredentialsResponse extends IBasicResponse{
         login: string;
         password: string;
     }

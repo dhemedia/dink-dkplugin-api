@@ -7,24 +7,21 @@ module dk {
         distributionIsAllowed: boolean;
     }
 
-    export interface IEnterpriseDetailsResponse {
+    export interface IEnterpriseDetailsResponse extends IBasicResponse{
         enterprise: IEnterprise;
-        result: boolean;
-        message: string;
-        cbId: string;
     }
 
     /**
-    @param result a json stringified IEnterprise object,
-    so you'll need to parse the json before accessing the IEnterprise properties
+    @param result a json stringified IEnterpriseDetailsResponse object,
+    so you'll need to parse the json before accessing the IEnterpriseDetailsResponse properties
     */
     export interface IEnterpriseDetailsSuccessFn {
         (result: string): null;
     }
 
     /**
-      @param result a json stringified IEnterprise object,
-      so you'll need to parse the json before accessing the IEnterprise properties
+      @param result a json stringified IEnterpriseDetailsResponse object,
+      so you'll need to parse the json before accessing the IEnterpriseDetailsResponse properties
     */
     export interface IEnterpriseDetailsFailureFn {
         (result: string): null;

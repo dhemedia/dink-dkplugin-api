@@ -36,6 +36,7 @@ module dk {
 
     /**
       It's important to note that this success function is not always called
+      @param result contains a short string describing the result of the call
     */
     export interface IRecordStatsSuccessFn {
         (result: string): null;
@@ -43,6 +44,7 @@ module dk {
 
     /**
       It's important to note that this failure function is not always called
+      @param result contains a short string describing the result of the call
     */
     export interface IRecordStatsFailureFn {
         (result: string): null;

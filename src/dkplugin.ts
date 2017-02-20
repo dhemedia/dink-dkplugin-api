@@ -5,7 +5,7 @@ module dk {
     export interface DKPlugin {
 
         /**
-        Retrieve enterprise details of the enterprise to which the user belongs
+        * Retrieve enterprise details of the enterprise to which the user belongs
         */
         getEnterpriseDetails(
             obj: IEnterpriseDetailsRequest
@@ -17,7 +17,7 @@ module dk {
         ): void;
 
         /**
-        Retrieve details about the current publication
+        * Retrieve details about the current publication
         */
         getPublicationDetails(
             publicationReference: string,
@@ -26,22 +26,22 @@ module dk {
         ): void;
 
         /**
-        Register events identified by an eventString
-        and associate them with an optional payload
+        * Register events identified by an eventString
+        * and associate them with an optional payload
         */
         recordAnalyticEventV2(
             obj: IAnalyticEventRequest
         ): void;
 
         /**
-        Open another publication from the within the current publication
+        * Open another publication from the within the current publication
         */
         openPublication(
             obj: IOpenPublicationRequest
         ): void;
 
         /**
-        Show a local pdf document in a pdf viewer
+        * Show a local pdf document in a pdf viewer
         */
         showPdfDocument(
             pdfName: string,
@@ -51,7 +51,7 @@ module dk {
         ): void;
 
         /**
-        Show a remote pdf document in a pdf viewer
+        * Show a remote pdf document in a pdf viewer
         */
         showRemotePdfDocument(
             obj: IShowRemotePdfDocumentRequest
@@ -69,14 +69,14 @@ module dk {
         ): void;
 
         /**
-        Add pdf document to microsite
+        * Add pdf document to microsite
         */
         addPdfToMicroSite(
             obj: IAddPdfToMicroSiteRequest
         ): void;
 
         /**
-        Open a url in a browser
+        * Open a url in a browser
         */
         openBrowser(
             obj: IOpenBrowserRequest

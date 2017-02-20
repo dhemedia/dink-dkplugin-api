@@ -1,28 +1,14 @@
 module dk{
 
-  export interface IAddPdfToMicroSiteResponse{
-    /**
-    * result indicates if call was successful
-    */
-    result:boolean;
-    message:string;
-    /**
-      cbId is the callbackIdentifier that was passed in, only present if
-      that callbackIdentifier was not empty
-    */
-    cbId?:string;
-  }
-
-
   /**
-    @param result is a json stringified IAddPdfToMicroSiteResponse object
+    @param result is a json stringified IBasicResponse object
   */
   export interface IAddPdfToMicroSiteSuccessFn {
       (result: string): null;
   }
 
   /**
-    @param result is a json stringified IAddPdfToMicroSiteResponse object
+    @param result is a json stringified IBasicResponse object
   */
   export interface IAddPdfToMicroSiteFailureFn {
       (result: string): null;

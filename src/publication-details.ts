@@ -40,6 +40,9 @@ module dk{
       (result: string): null;
   }
 
+  /**
+    @param result is an error message
+  */
   export interface IPublicationDetailsFailureFn{
       (result: string): null;
   }

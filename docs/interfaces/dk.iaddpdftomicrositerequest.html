@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IRecordStatsFailureFn | d!nk DKPlugin API</title>
+	<title>IAddPdfToMicroSiteRequest | d!nk DKPlugin API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,62 +59,93 @@
 					<a href="../modules/dk.html">dk</a>
 				</li>
 				<li>
-					<a href="dk.irecordstatsfailurefn.html">IRecordStatsFailureFn</a>
+					<a href="dk.iaddpdftomicrositerequest.html">IAddPdfToMicroSiteRequest</a>
 				</li>
 			</ul>
-			<h1>Interface IRecordStatsFailureFn</h1>
+			<h1>Interface IAddPdfToMicroSiteRequest</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>It&#39;s important to note that this failure function is not always called</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IRecordStatsFailureFn</span>
+						<span class="target">IAddPdfToMicroSiteRequest</span>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel">
-				<h3 class="tsd-before-signature">Callable</h3>
-				<ul class="tsd-signatures tsd-kind-interface tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/record-stat.ts#L49">record-stat.ts:49</a></li>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iaddpdftomicrositerequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iaddpdftomicrositerequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iaddpdftomicrositerequest.html#filename" class="tsd-kind-icon">file<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iaddpdftomicrositerequest.html#publicationkey" class="tsd-kind-icon">publication<wbr>Key</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iaddpdftomicrositerequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a></li>
 							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>It&#39;s important to note that this failure function is not always called</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>result: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>contains a short string describing the result of the call</p>
-									</div>
-								</div>
-							</li>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="callbackidentifier" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> callback<wbr>Identifier</h3>
+					<div class="tsd-signature tsd-kind-icon">callback<wbr>Identifier<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/pdf-microsite.ts#L21">pdf-microsite.ts:21</a></li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span></h4>
-					</li>
-				</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="failurecallback" class="tsd-anchor"></a>
+					<h3>failure<wbr>Callback</h3>
+					<div class="tsd-signature tsd-kind-icon">failure<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.iaddpdftomicrositefailurefn.html" class="tsd-signature-type">IAddPdfToMicroSiteFailureFn</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/pdf-microsite.ts#L19">pdf-microsite.ts:19</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="filename" class="tsd-anchor"></a>
+					<h3>file<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">file<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/pdf-microsite.ts#L20">pdf-microsite.ts:20</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="publicationkey" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> publication<wbr>Key</h3>
+					<div class="tsd-signature tsd-kind-icon">publication<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/pdf-microsite.ts#L22">pdf-microsite.ts:22</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="successcallback" class="tsd-anchor"></a>
+					<h3>success<wbr>Callback</h3>
+					<div class="tsd-signature tsd-kind-icon">success<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.iaddpdftomicrositesuccessfn.html" class="tsd-signature-type">IAddPdfToMicroSiteSuccessFn</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/pdf-microsite.ts#L18">pdf-microsite.ts:18</a></li>
+						</ul>
+					</aside>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -139,9 +170,30 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="dk.iaddpdftomicrositefailurefn.html" class="tsd-kind-icon">IAdd<wbr>Pdf<wbr>ToMicro<wbr>Site<wbr>Failure<wbr>Fn</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
 						<a href="dk.iaddpdftomicrositerequest.html" class="tsd-kind-icon">IAdd<wbr>Pdf<wbr>ToMicro<wbr>Site<wbr>Request</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dk.iaddpdftomicrositerequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dk.iaddpdftomicrositerequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dk.iaddpdftomicrositerequest.html#filename" class="tsd-kind-icon">file<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dk.iaddpdftomicrositerequest.html#publicationkey" class="tsd-kind-icon">publication<wbr>Key</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dk.iaddpdftomicrositerequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="dk.iaddpdftomicrositesuccessfn.html" class="tsd-kind-icon">IAdd<wbr>Pdf<wbr>ToMicro<wbr>Site<wbr>Success<wbr>Fn</a>
 					</li>
@@ -211,13 +263,9 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="dk.ipublicationdetailssuccessfn.html" class="tsd-kind-icon">IPublication<wbr>Details<wbr>Success<wbr>Fn</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="dk.irecordstatsfailurefn.html" class="tsd-kind-icon">IRecord<wbr>Stats<wbr>Failure<wbr>Fn</a>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="dk.irecordstatssuccessfn.html" class="tsd-kind-icon">IRecord<wbr>Stats<wbr>Success<wbr>Fn</a>
 					</li>

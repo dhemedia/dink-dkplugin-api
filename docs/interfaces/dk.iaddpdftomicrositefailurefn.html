@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IRecordStatsFailureFn | d!nk DKPlugin API</title>
+	<title>IAddPdfToMicroSiteFailureFn | d!nk DKPlugin API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/dk.html">dk</a>
 				</li>
 				<li>
-					<a href="dk.irecordstatsfailurefn.html">IRecordStatsFailureFn</a>
+					<a href="dk.iaddpdftomicrositefailurefn.html">IAddPdfToMicroSiteFailureFn</a>
 				</li>
 			</ul>
-			<h1>Interface IRecordStatsFailureFn</h1>
+			<h1>Interface IAddPdfToMicroSiteFailureFn</h1>
 		</div>
 	</div>
 </header>
@@ -71,16 +71,13 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>It&#39;s important to note that this failure function is not always called</p>
-					</div>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IRecordStatsFailureFn</span>
+						<span class="target">IAddPdfToMicroSiteFailureFn</span>
 					</li>
 				</ul>
 			</section>
@@ -93,21 +90,16 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/record-stat.ts#L49">record-stat.ts:49</a></li>
+								<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/pdf-microsite.ts#L13">pdf-microsite.ts:13</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>It&#39;s important to note that this failure function is not always called</p>
-							</div>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>result: <span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
 									<div class="lead">
-										<p>contains a short string describing the result of the call</p>
+										<p>is a json stringified IBasicResponse object</p>
 									</div>
 								</div>
 							</li>
@@ -136,9 +128,13 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="dk.dkplugin.html" class="tsd-kind-icon">DKPlugin</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
 						<a href="dk.iaddpdftomicrositefailurefn.html" class="tsd-kind-icon">IAdd<wbr>Pdf<wbr>ToMicro<wbr>Site<wbr>Failure<wbr>Fn</a>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="dk.iaddpdftomicrositerequest.html" class="tsd-kind-icon">IAdd<wbr>Pdf<wbr>ToMicro<wbr>Site<wbr>Request</a>
 					</li>
@@ -211,13 +207,9 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="dk.ipublicationdetailssuccessfn.html" class="tsd-kind-icon">IPublication<wbr>Details<wbr>Success<wbr>Fn</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="dk.irecordstatsfailurefn.html" class="tsd-kind-icon">IRecord<wbr>Stats<wbr>Failure<wbr>Fn</a>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="dk.irecordstatssuccessfn.html" class="tsd-kind-icon">IRecord<wbr>Stats<wbr>Success<wbr>Fn</a>
 					</li>

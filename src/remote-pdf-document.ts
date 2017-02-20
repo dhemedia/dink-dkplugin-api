@@ -3,7 +3,7 @@ module dk {
     /**
       It's important to note that this success function is not always called,
       because the webview may have disappeared.
-      @param result is a message confirming the document was opened.
+      @param result is a message confirming the document was opened
     */
     export interface IShowRemotePdfDocumentSuccessFn {
         (result: string): null;
