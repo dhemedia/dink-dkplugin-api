@@ -67,5 +67,21 @@ module dk {
             successCallbackFn: IRecordStatsSuccessFn,
             failureCallbackFn: IRecordStatsFailureFn
         ): void;
+
+        /**
+        Add pdf document to microsite
+        */
+        addPdfToMicroSite(
+            obj: IAddPdfToMicroSiteRequest
+        ): void;
+
+        /**
+        Open a url in a browser
+        */
+        openBrowser(
+            obj: IOpenBrowserRequest
+        ): void;
+
+
     }
 }

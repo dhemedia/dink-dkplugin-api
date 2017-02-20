@@ -10,6 +10,9 @@ module dk{
     cbId:string;
   }
 
+  /**
+    @param result is a json stringified IOpenPublicationSuccessResponse object
+  */
   export interface IOpenPublicationSuccessFn{
       (result: string): null;
   }
