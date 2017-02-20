@@ -21,9 +21,6 @@ module dk{
       (result: string): null;
   }
 
-  /**
-  This method allows users to open other publications from within a publication
-  */
   export interface IOpenPublicationRequest{
     /** The key of the story on which we like to open the publication */
     storyKey?: string;

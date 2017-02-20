@@ -32,6 +32,10 @@ module dk{
     k:string;
   }
 
+  /**
+    @param result a json stringified IPublicationDetailsResponse object,
+    so you'll need to parse the json before accessing the IPublicationDetailsResponse properties
+  */
   export interface IPublicationDetailsSuccessFn{
       (result: string): null;
   }

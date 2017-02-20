@@ -14,10 +14,6 @@ module dk {
         (result: string): null;
     }
 
-    /**
-    Users can register events identified by an eventString
-    and associate them with an optional payload
-    */
     export interface IAnalyticEventRequest {
         /** The key of the story for which we're registering the event */
         storyKey: string;
