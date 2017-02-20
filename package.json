@@ -1,0 +1,17 @@
+{
+  "name": "dink-dkplugin-api",
+  "version": "1.0.0",
+  "description": "This API exposes native functionality to the user through an asynchronous API.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typedoc": "^0.5.6"
+  }
+}
