@@ -93,6 +93,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="dk.dkplugin.html#addpdftomicrosite" class="tsd-kind-icon">add<wbr>Pdf<wbr>ToMicro<wbr>Site</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="dk.dkplugin.html#concatpdf" class="tsd-kind-icon">concat<wbr>Pdf</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="dk.dkplugin.html#executelocalfiletransactions" class="tsd-kind-icon">execute<wbr>Local<wbr>File<wbr>Transactions</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="dk.dkplugin.html#generateimagefromscreencapture" class="tsd-kind-icon">generate<wbr>Image<wbr>From<wbr>Screen<wbr>Capture</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="dk.dkplugin.html#generatepdffromimage" class="tsd-kind-icon">generate<wbr>Pdf<wbr>From<wbr>Image</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="dk.dkplugin.html#getcredentials" class="tsd-kind-icon">get<wbr>Credentials</a></li>
@@ -125,7 +126,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/dkplugin.ts#L74">dkplugin.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/97dbe0b/src/dkplugin.ts#L74">dkplugin.ts:74</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -153,7 +154,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/dkplugin.ts#L110">dkplugin.ts:110</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/97dbe0b/src/dkplugin.ts#L110">dkplugin.ts:110</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -172,6 +173,40 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="executelocalfiletransactions" class="tsd-anchor"></a>
+					<h3>execute<wbr>Local<wbr>File<wbr>Transactions</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">execute<wbr>Local<wbr>File<wbr>Transactions<span class="tsd-signature-symbol">(</span>successCallbackFn<span class="tsd-signature-symbol">: </span><a href="dk.iexecutelocalfiletransactionssuccessfn.html" class="tsd-signature-type">IExecuteLocalFileTransactionsSuccessFn</a>, failureCallbackFn<span class="tsd-signature-symbol">: </span><a href="dk.iexecutelocalfiletransactionsfailurefn.html" class="tsd-signature-type">IExecuteLocalFileTransactionsFailureFn</a>, callbackIdentifier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/97dbe0b/src/dkplugin.ts#L142">dkplugin.ts:142</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Trigger the sending of data to the server (if online)</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>successCallbackFn: <a href="dk.iexecutelocalfiletransactionssuccessfn.html" class="tsd-signature-type">IExecuteLocalFileTransactionsSuccessFn</a></h5>
+								</li>
+								<li>
+									<h5>failureCallbackFn: <a href="dk.iexecutelocalfiletransactionsfailurefn.html" class="tsd-signature-type">IExecuteLocalFileTransactionsFailureFn</a></h5>
+								</li>
+								<li>
+									<h5>callbackIdentifier: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="generateimagefromscreencapture" class="tsd-anchor"></a>
 					<h3>generate<wbr>Image<wbr>From<wbr>Screen<wbr>Capture</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -181,7 +216,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/dkplugin.ts#L96">dkplugin.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/97dbe0b/src/dkplugin.ts#L96">dkplugin.ts:96</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -209,7 +244,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/dkplugin.ts#L103">dkplugin.ts:103</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/97dbe0b/src/dkplugin.ts#L103">dkplugin.ts:103</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -237,7 +272,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/dkplugin.ts#L14">dkplugin.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/97dbe0b/src/dkplugin.ts#L14">dkplugin.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -263,7 +298,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/dkplugin.ts#L10">dkplugin.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/97dbe0b/src/dkplugin.ts#L10">dkplugin.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -291,7 +326,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/dkplugin.ts#L131">dkplugin.ts:131</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/97dbe0b/src/dkplugin.ts#L132">dkplugin.ts:132</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -303,6 +338,9 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>ids: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>is an array of local keys of the transactions that you wish to know more about</p>
+									</div>
 								</li>
 								<li>
 									<h5>successCallbackFn: <a href="dk.igetlocalfiletransactionssuccessfn.html" class="tsd-signature-type">IGetLocalFileTransactionsSuccessFn</a></h5>
@@ -328,7 +366,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/dkplugin.ts#L117">dkplugin.ts:117</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/97dbe0b/src/dkplugin.ts#L117">dkplugin.ts:117</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -356,7 +394,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/dkplugin.ts#L22">dkplugin.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/97dbe0b/src/dkplugin.ts#L22">dkplugin.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -390,7 +428,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/dkplugin.ts#L88">dkplugin.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/97dbe0b/src/dkplugin.ts#L88">dkplugin.ts:88</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -421,7 +459,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/dkplugin.ts#L124">dkplugin.ts:124</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/97dbe0b/src/dkplugin.ts#L124">dkplugin.ts:124</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -449,7 +487,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/dkplugin.ts#L81">dkplugin.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/97dbe0b/src/dkplugin.ts#L81">dkplugin.ts:81</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -477,7 +515,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/dkplugin.ts#L39">dkplugin.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/97dbe0b/src/dkplugin.ts#L39">dkplugin.ts:39</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -505,7 +543,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/dkplugin.ts#L32">dkplugin.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/97dbe0b/src/dkplugin.ts#L32">dkplugin.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -534,7 +572,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/dkplugin.ts#L64">dkplugin.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/97dbe0b/src/dkplugin.ts#L64">dkplugin.ts:64</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -574,7 +612,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/dkplugin.ts#L46">dkplugin.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/97dbe0b/src/dkplugin.ts#L46">dkplugin.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -611,7 +649,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/dkplugin.ts#L56">dkplugin.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/97dbe0b/src/dkplugin.ts#L56">dkplugin.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -654,6 +692,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="dk.dkplugin.html#concatpdf" class="tsd-kind-icon">concat<wbr>Pdf</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="dk.dkplugin.html#executelocalfiletransactions" class="tsd-kind-icon">execute<wbr>Local<wbr>File<wbr>Transactions</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="dk.dkplugin.html#generateimagefromscreencapture" class="tsd-kind-icon">generate<wbr>Image<wbr>From<wbr>Screen<wbr>Capture</a>

@@ -127,12 +127,21 @@ module dk {
 
         /**
         * Retrieve details about file transactions
+        * @param ids is an array of local keys of the transactions that you wish to know more about
         */
         getLocalFileTransactions(
-            /** ids is an array of local keys of the transactions that you wish to know more about */
             ids: string[],
             successCallbackFn: IGetLocalFileTransactionsSuccessFn,
             failureCallbackFn: IGetLocalFileTransactionsFailureFn,
+            callbackIdentifier: string
+        ): void;
+
+        /**
+        * Trigger the sending of data to the server (if online)
+        */
+        executeLocalFileTransactions(
+            successCallbackFn: IExecuteLocalFileTransactionsSuccessFn,
+            failureCallbackFn: IExecuteLocalFileTransactionsFailureFn,
             callbackIdentifier: string
         ): void;
     }
