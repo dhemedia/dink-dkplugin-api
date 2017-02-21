@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IGetLocalPdfDocumentsRequest | d!nk DKPlugin API</title>
+	<title>IGetLocalFileTransactionsResponse | d!nk DKPlugin API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/dk.html">dk</a>
 				</li>
 				<li>
-					<a href="dk.igetlocalpdfdocumentsrequest.html">IGetLocalPdfDocumentsRequest</a>
+					<a href="dk.igetlocalfiletransactionsresponse.html">IGetLocalFileTransactionsResponse</a>
 				</li>
 			</ul>
-			<h1>Interface IGetLocalPdfDocumentsRequest</h1>
+			<h1>Interface IGetLocalFileTransactionsResponse</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IGetLocalPdfDocumentsRequest</span>
+						<a href="dk.ibasicresponse.html" class="tsd-signature-type">IBasicResponse</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">IGetLocalFileTransactionsResponse</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -84,10 +89,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.igetlocalpdfdocumentsrequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.igetlocalpdfdocumentsrequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.igetlocalpdfdocumentsrequest.html#publicationkey" class="tsd-kind-icon">publication<wbr>Key</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.igetlocalpdfdocumentsrequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="dk.igetlocalfiletransactionsresponse.html#cbid" class="tsd-kind-icon">cb<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.igetlocalfiletransactionsresponse.html#localfiletransactions" class="tsd-kind-icon">local<wbr>File<wbr>Transactions</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="dk.igetlocalfiletransactionsresponse.html#message" class="tsd-kind-icon">message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="dk.igetlocalfiletransactionsresponse.html#result" class="tsd-kind-icon">result</a></li>
 							</ul>
 						</section>
 					</div>
@@ -95,45 +100,59 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="cbid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> cb<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">cb<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="dk.ibasicresponse.html">IBasicResponse</a>.<a href="dk.ibasicresponse.html#cbid">cbId</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/basic-response.ts#L12">basic-response.ts:12</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>cbId is the callbackIdentifier that was passed in, only present if
+							that callbackIdentifier was not empty</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="callbackidentifier" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> callback<wbr>Identifier</h3>
-					<div class="tsd-signature tsd-kind-icon">callback<wbr>Identifier<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="localfiletransactions" class="tsd-anchor"></a>
+					<h3>local<wbr>File<wbr>Transactions</h3>
+					<div class="tsd-signature tsd-kind-icon">local<wbr>File<wbr>Transactions<span class="tsd-signature-symbol">:</span> <a href="dk.itransaction.html" class="tsd-signature-type">ITransaction</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/pdf-local.ts#L27">pdf-local.ts:27</a></li>
+							<li>Defined in transactions-local.ts:21</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="failurecallback" class="tsd-anchor"></a>
-					<h3>failure<wbr>Callback</h3>
-					<div class="tsd-signature tsd-kind-icon">failure<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.igetlocalpdfdocumentsfailurefn.html" class="tsd-signature-type">IGetLocalPdfDocumentsFailureFn</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="message" class="tsd-anchor"></a>
+					<h3>message</h3>
+					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="dk.ibasicresponse.html">IBasicResponse</a>.<a href="dk.ibasicresponse.html#message">message</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/pdf-local.ts#L26">pdf-local.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/basic-response.ts#L7">basic-response.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="publicationkey" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> publication<wbr>Key</h3>
-					<div class="tsd-signature tsd-kind-icon">publication<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="result" class="tsd-anchor"></a>
+					<h3>result</h3>
+					<div class="tsd-signature tsd-kind-icon">result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="dk.ibasicresponse.html">IBasicResponse</a>.<a href="dk.ibasicresponse.html#result">result</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/pdf-local.ts#L28">pdf-local.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/basic-response.ts#L6">basic-response.ts:6</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="successcallback" class="tsd-anchor"></a>
-					<h3>success<wbr>Callback</h3>
-					<div class="tsd-signature tsd-kind-icon">success<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.igetlocalpdfdocumentssuccessfn.html" class="tsd-signature-type">IGetLocalPdfDocumentsSuccessFn</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/72e671b/src/pdf-local.ts#L25">pdf-local.ts:25</a></li>
-						</ul>
-					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>result indicates if call was successful</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -153,19 +172,19 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.igetlocalpdfdocumentsrequest.html" class="tsd-kind-icon">IGet<wbr>Local<wbr>Pdf<wbr>Documents<wbr>Request</a>
+						<a href="dk.igetlocalfiletransactionsresponse.html" class="tsd-kind-icon">IGet<wbr>Local<wbr>File<wbr>Transactions<wbr>Response</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.igetlocalpdfdocumentsrequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="dk.igetlocalfiletransactionsresponse.html#cbid" class="tsd-kind-icon">cb<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.igetlocalpdfdocumentsrequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a>
+								<a href="dk.igetlocalfiletransactionsresponse.html#localfiletransactions" class="tsd-kind-icon">local<wbr>File<wbr>Transactions</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.igetlocalpdfdocumentsrequest.html#publicationkey" class="tsd-kind-icon">publication<wbr>Key</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="dk.igetlocalfiletransactionsresponse.html#message" class="tsd-kind-icon">message</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.igetlocalpdfdocumentsrequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="dk.igetlocalfiletransactionsresponse.html#result" class="tsd-kind-icon">result</a>
 							</li>
 						</ul>
 					</li>

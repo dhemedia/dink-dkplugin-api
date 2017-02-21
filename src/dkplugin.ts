@@ -125,5 +125,15 @@ module dk {
             obj: IMailLocalPdfDocumentsRequest
         ): void;
 
+        /**
+        * Retrieve details about file transactions
+        */
+        getLocalFileTransactions(
+            /** ids is an array of local keys of the transactions that you wish to know more about */
+            ids: string[],
+            successCallbackFn: IGetLocalFileTransactionsSuccessFn,
+            failureCallbackFn: IGetLocalFileTransactionsFailureFn,
+            callbackIdentifier: string
+        ): void;
     }
 }
