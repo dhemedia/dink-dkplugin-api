@@ -111,5 +111,19 @@ module dk {
             obj: IConcatPdfRequest
         ): void;
 
+        /**
+        * Get a list of available pdf files
+        */
+        getLocalPdfDocuments(
+            obj: IGetLocalPdfDocumentsRequest
+        ): void;
+
+        /**
+        * Mail a list of pdf files
+        */
+        mailLocalPdfDocuments(
+            obj: IMailLocalPdfDocumentsRequest
+        ): void;
+
     }
 }
