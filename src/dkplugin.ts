@@ -137,12 +137,28 @@ module dk {
         ): void;
 
         /**
-        * Trigger the sending of data to the server (if online)
+        * Trigger the sending of data to the server
         */
         executeLocalFileTransactions(
             successCallbackFn: IExecuteLocalFileTransactionsSuccessFn,
             failureCallbackFn: IExecuteLocalFileTransactionsFailureFn,
             callbackIdentifier: string
         ): void;
+
+        /**
+        * Creates a transaction containing multiple files
+        * @param ids is an array of strings (the fileIdentifiers passed into storeLocalFile)
+        * @param notificationUrl is the url that will be called after all data is ready
+        * @param deleteAfterSync indicates if files have to be removed after syncing
+        */
+        syncLocalFiles(
+            ids: string[],
+            notificationUrl: string,
+            deleteAfterSync: boolean,
+            successCallbackFn: ISyncLocalFilesSuccessFn,
+            failureCallbackFn: ISyncLocalFilesFailureFn,
+            callbackIdentifier: string
+        ): void;
+
     }
 }

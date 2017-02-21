@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IShowPdfDocumentFailureFn | d!nk DKPlugin API</title>
+	<title>ISyncLocalFilesSuccessFn | d!nk DKPlugin API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/dk.html">dk</a>
 				</li>
 				<li>
-					<a href="dk.ishowpdfdocumentfailurefn.html">IShowPdfDocumentFailureFn</a>
+					<a href="dk.isynclocalfilessuccessfn.html">ISyncLocalFilesSuccessFn</a>
 				</li>
 			</ul>
-			<h1>Interface IShowPdfDocumentFailureFn</h1>
+			<h1>Interface ISyncLocalFilesSuccessFn</h1>
 		</div>
 	</div>
 </header>
@@ -77,7 +77,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IShowPdfDocumentFailureFn</span>
+						<span class="target">ISyncLocalFilesSuccessFn</span>
 					</li>
 				</ul>
 			</section>
@@ -90,7 +90,7 @@
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/8a76e11/src/pdf-document.ts#L15">pdf-document.ts:15</a></li>
+								<li>Defined in file-local-sync.ts:14</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -99,7 +99,8 @@
 								<h5>result: <span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
 									<div class="lead">
-										<p>is an error message</p>
+										<p>is a json stringified ISyncLocalFilesResponse object,
+										so you&#39;ll need to parse the json before accessing the ISyncLocalFilesResponse properties</p>
 									</div>
 								</div>
 							</li>
@@ -125,7 +126,7 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.ishowpdfdocumentfailurefn.html" class="tsd-kind-icon">IShow<wbr>Pdf<wbr>Document<wbr>Failure<wbr>Fn</a>
+						<a href="dk.isynclocalfilessuccessfn.html" class="tsd-kind-icon">ISync<wbr>Local<wbr>Files<wbr>Success<wbr>Fn</a>
 					</li>
 				</ul>
 				<ul class="after-current">
