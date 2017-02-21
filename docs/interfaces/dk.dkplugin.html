@@ -92,9 +92,13 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="dk.dkplugin.html#addpdftomicrosite" class="tsd-kind-icon">add<wbr>Pdf<wbr>ToMicro<wbr>Site</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="dk.dkplugin.html#concatpdf" class="tsd-kind-icon">concat<wbr>Pdf</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="dk.dkplugin.html#generateimagefromscreencapture" class="tsd-kind-icon">generate<wbr>Image<wbr>From<wbr>Screen<wbr>Capture</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="dk.dkplugin.html#generatepdffromimage" class="tsd-kind-icon">generate<wbr>Pdf<wbr>From<wbr>Image</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="dk.dkplugin.html#getcredentials" class="tsd-kind-icon">get<wbr>Credentials</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="dk.dkplugin.html#getenterprisedetails" class="tsd-kind-icon">get<wbr>Enterprise<wbr>Details</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="dk.dkplugin.html#getpublicationdetails" class="tsd-kind-icon">get<wbr>Publication<wbr>Details</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="dk.dkplugin.html#getuserprofile" class="tsd-kind-icon">get<wbr>User<wbr>Profile</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="dk.dkplugin.html#openbrowser" class="tsd-kind-icon">open<wbr>Browser</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="dk.dkplugin.html#openpublication" class="tsd-kind-icon">open<wbr>Publication</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="dk.dkplugin.html#recordanalyticeventv2" class="tsd-kind-icon">record<wbr>Analytic<wbr>Event<wbr>V2</a></li>
@@ -118,7 +122,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/dkplugin.ts#L74">dkplugin.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0bb21c7/src/dkplugin.ts#L74">dkplugin.ts:74</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -137,6 +141,90 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="concatpdf" class="tsd-anchor"></a>
+					<h3>concat<wbr>Pdf</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">concat<wbr>Pdf<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="dk.iconcatpdfrequest.html" class="tsd-signature-type">IConcatPdfRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0bb21c7/src/dkplugin.ts#L110">dkplugin.ts:110</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Combine multiple pdf files into a single pdf file</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <a href="dk.iconcatpdfrequest.html" class="tsd-signature-type">IConcatPdfRequest</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="generateimagefromscreencapture" class="tsd-anchor"></a>
+					<h3>generate<wbr>Image<wbr>From<wbr>Screen<wbr>Capture</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">generate<wbr>Image<wbr>From<wbr>Screen<wbr>Capture<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="dk.igenerateimagefromscreencapturerequest.html" class="tsd-signature-type">IGenerateImageFromScreenCaptureRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0bb21c7/src/dkplugin.ts#L96">dkplugin.ts:96</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Take a screenshot and save it as a file</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <a href="dk.igenerateimagefromscreencapturerequest.html" class="tsd-signature-type">IGenerateImageFromScreenCaptureRequest</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="generatepdffromimage" class="tsd-anchor"></a>
+					<h3>generate<wbr>Pdf<wbr>From<wbr>Image</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">generate<wbr>Pdf<wbr>From<wbr>Image<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="dk.igeneratepdffromimagerequest.html" class="tsd-signature-type">IGeneratePdfFromImageRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0bb21c7/src/dkplugin.ts#L103">dkplugin.ts:103</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Save an image as a pdf</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <a href="dk.igeneratepdffromimagerequest.html" class="tsd-signature-type">IGeneratePdfFromImageRequest</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="getcredentials" class="tsd-anchor"></a>
 					<h3>get<wbr>Credentials</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -146,7 +234,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/dkplugin.ts#L14">dkplugin.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0bb21c7/src/dkplugin.ts#L14">dkplugin.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -172,7 +260,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/dkplugin.ts#L10">dkplugin.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0bb21c7/src/dkplugin.ts#L10">dkplugin.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -200,7 +288,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/dkplugin.ts#L22">dkplugin.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0bb21c7/src/dkplugin.ts#L22">dkplugin.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -225,6 +313,37 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getuserprofile" class="tsd-anchor"></a>
+					<h3>get<wbr>User<wbr>Profile</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>User<wbr>Profile<span class="tsd-signature-symbol">(</span>successCallbackFn<span class="tsd-signature-symbol">: </span><a href="dk.iuserprofilesuccessfn.html" class="tsd-signature-type">IUserProfileSuccessFn</a>, failureCallbackFn<span class="tsd-signature-symbol">: </span><a href="dk.iuserprofilefailurefn.html" class="tsd-signature-type">IUserProfileFailureFn</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0bb21c7/src/dkplugin.ts#L88">dkplugin.ts:88</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Retrieve the user profile</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>successCallbackFn: <a href="dk.iuserprofilesuccessfn.html" class="tsd-signature-type">IUserProfileSuccessFn</a></h5>
+								</li>
+								<li>
+									<h5>failureCallbackFn: <a href="dk.iuserprofilefailurefn.html" class="tsd-signature-type">IUserProfileFailureFn</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="openbrowser" class="tsd-anchor"></a>
 					<h3>open<wbr>Browser</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -234,7 +353,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/dkplugin.ts#L81">dkplugin.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0bb21c7/src/dkplugin.ts#L81">dkplugin.ts:81</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -262,7 +381,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/dkplugin.ts#L39">dkplugin.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0bb21c7/src/dkplugin.ts#L39">dkplugin.ts:39</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -290,7 +409,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/dkplugin.ts#L32">dkplugin.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0bb21c7/src/dkplugin.ts#L32">dkplugin.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -319,7 +438,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/dkplugin.ts#L64">dkplugin.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0bb21c7/src/dkplugin.ts#L64">dkplugin.ts:64</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -359,7 +478,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/dkplugin.ts#L46">dkplugin.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0bb21c7/src/dkplugin.ts#L46">dkplugin.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -396,7 +515,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/3357c22/src/dkplugin.ts#L56">dkplugin.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0bb21c7/src/dkplugin.ts#L56">dkplugin.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -429,9 +548,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="../enums/dk.openpublicationfailureerrorcode.html" class="tsd-kind-icon">Open<wbr>Publication<wbr>Failure<wbr>Error<wbr>Code</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
@@ -441,6 +557,15 @@
 								<a href="dk.dkplugin.html#addpdftomicrosite" class="tsd-kind-icon">add<wbr>Pdf<wbr>ToMicro<wbr>Site</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="dk.dkplugin.html#concatpdf" class="tsd-kind-icon">concat<wbr>Pdf</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="dk.dkplugin.html#generateimagefromscreencapture" class="tsd-kind-icon">generate<wbr>Image<wbr>From<wbr>Screen<wbr>Capture</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="dk.dkplugin.html#generatepdffromimage" class="tsd-kind-icon">generate<wbr>Pdf<wbr>From<wbr>Image</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="dk.dkplugin.html#getcredentials" class="tsd-kind-icon">get<wbr>Credentials</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
@@ -448,6 +573,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="dk.dkplugin.html#getpublicationdetails" class="tsd-kind-icon">get<wbr>Publication<wbr>Details</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="dk.dkplugin.html#getuserprofile" class="tsd-kind-icon">get<wbr>User<wbr>Profile</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="dk.dkplugin.html#openbrowser" class="tsd-kind-icon">open<wbr>Browser</a>
@@ -471,108 +599,6 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.iaddpdftomicrositefailurefn.html" class="tsd-kind-icon">IAdd<wbr>Pdf<wbr>ToMicro<wbr>Site<wbr>Failure<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.iaddpdftomicrositerequest.html" class="tsd-kind-icon">IAdd<wbr>Pdf<wbr>ToMicro<wbr>Site<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.iaddpdftomicrositesuccessfn.html" class="tsd-kind-icon">IAdd<wbr>Pdf<wbr>ToMicro<wbr>Site<wbr>Success<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.ianalyticeventfailurefn.html" class="tsd-kind-icon">IAnalytic<wbr>Event<wbr>Failure<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.ianalyticeventrequest.html" class="tsd-kind-icon">IAnalytic<wbr>Event<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.ianalyticeventsuccessfn.html" class="tsd-kind-icon">IAnalytic<wbr>Event<wbr>Success<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.ibasicresponse.html" class="tsd-kind-icon">IBasic<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.icredentialsfailurefn.html" class="tsd-kind-icon">ICredentials<wbr>Failure<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.icredentialsresponse.html" class="tsd-kind-icon">ICredentials<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.icredentialssuccessfn.html" class="tsd-kind-icon">ICredentials<wbr>Success<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.ienterprise.html" class="tsd-kind-icon">IEnterprise</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.ienterprisedetailsfailurefn.html" class="tsd-kind-icon">IEnterprise<wbr>Details<wbr>Failure<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.ienterprisedetailsrequest.html" class="tsd-kind-icon">IEnterprise<wbr>Details<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.ienterprisedetailsresponse.html" class="tsd-kind-icon">IEnterprise<wbr>Details<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.ienterprisedetailssuccessfn.html" class="tsd-kind-icon">IEnterprise<wbr>Details<wbr>Success<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.iopenbrowserrequest.html" class="tsd-kind-icon">IOpen<wbr>Browser<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.iopenbrowserrequestfailurefn.html" class="tsd-kind-icon">IOpen<wbr>Browser<wbr>Request<wbr>Failure<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.iopenbrowserrequestsuccessfn.html" class="tsd-kind-icon">IOpen<wbr>Browser<wbr>Request<wbr>Success<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.iopenpublicationfailurefn.html" class="tsd-kind-icon">IOpen<wbr>Publication<wbr>Failure<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.iopenpublicationfailureresponse.html" class="tsd-kind-icon">IOpen<wbr>Publication<wbr>Failure<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.iopenpublicationrequest.html" class="tsd-kind-icon">IOpen<wbr>Publication<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.iopenpublicationsuccessfn.html" class="tsd-kind-icon">IOpen<wbr>Publication<wbr>Success<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.ipublicationdetailsfailurefn.html" class="tsd-kind-icon">IPublication<wbr>Details<wbr>Failure<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.ipublicationdetailsresponse.html" class="tsd-kind-icon">IPublication<wbr>Details<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.ipublicationdetailssuccessfn.html" class="tsd-kind-icon">IPublication<wbr>Details<wbr>Success<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.irecordstatsfailurefn.html" class="tsd-kind-icon">IRecord<wbr>Stats<wbr>Failure<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.irecordstatssuccessfn.html" class="tsd-kind-icon">IRecord<wbr>Stats<wbr>Success<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.ishowpdfdocumentfailurefn.html" class="tsd-kind-icon">IShow<wbr>Pdf<wbr>Document<wbr>Failure<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.ishowpdfdocumentsuccessfn.html" class="tsd-kind-icon">IShow<wbr>Pdf<wbr>Document<wbr>Success<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.ishowremotepdfdocumentfailurefn.html" class="tsd-kind-icon">IShow<wbr>Remote<wbr>Pdf<wbr>Document<wbr>Failure<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.ishowremotepdfdocumentrequest.html" class="tsd-kind-icon">IShow<wbr>Remote<wbr>Pdf<wbr>Document<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.ishowremotepdfdocumentsuccessfn.html" class="tsd-kind-icon">IShow<wbr>Remote<wbr>Pdf<wbr>Document<wbr>Success<wbr>Fn</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.istat.html" class="tsd-kind-icon">IStat</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.ivisit.html" class="tsd-kind-icon">IVisit</a>
-					</li>
 				</ul>
 			</nav>
 		</div>

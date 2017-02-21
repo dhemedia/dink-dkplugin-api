@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IOpenBrowserRequestFailureFn | d!nk DKPlugin API</title>
+	<title>IGeneratePdfFromImageRequest | d!nk DKPlugin API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,54 +59,103 @@
 					<a href="../modules/dk.html">dk</a>
 				</li>
 				<li>
-					<a href="dk.iopenbrowserrequestfailurefn.html">IOpenBrowserRequestFailureFn</a>
+					<a href="dk.igeneratepdffromimagerequest.html">IGeneratePdfFromImageRequest</a>
 				</li>
 			</ul>
-			<h1>Interface IOpenBrowserRequestFailureFn</h1>
+			<h1>Interface IGeneratePdfFromImageRequest</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IOpenBrowserRequestFailureFn</span>
+						<span class="target">IGeneratePdfFromImageRequest</span>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel">
-				<h3 class="tsd-before-signature">Callable</h3>
-				<ul class="tsd-signatures tsd-kind-interface tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0bb21c7/src/open-browser.ts#L13">open-browser.ts:13</a></li>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.igeneratepdffromimagerequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.igeneratepdffromimagerequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.igeneratepdffromimagerequest.html#imagepath" class="tsd-kind-icon">image<wbr>Path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.igeneratepdffromimagerequest.html#requestedname" class="tsd-kind-icon">requested<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.igeneratepdffromimagerequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a></li>
 							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>result: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>is a json stringified IBasicResponse object</p>
-									</div>
-								</div>
-							</li>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="callbackidentifier" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> callback<wbr>Identifier</h3>
+					<div class="tsd-signature tsd-kind-icon">callback<wbr>Identifier<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0bb21c7/src/pdf-from-image.ts#L30">pdf-from-image.ts:30</a></li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span></h4>
-					</li>
-				</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="failurecallback" class="tsd-anchor"></a>
+					<h3>failure<wbr>Callback</h3>
+					<div class="tsd-signature tsd-kind-icon">failure<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.igeneratepdffromimagefailurefn.html" class="tsd-signature-type">IGeneratePdfFromImageFailureFn</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0bb21c7/src/pdf-from-image.ts#L25">pdf-from-image.ts:25</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="imagepath" class="tsd-anchor"></a>
+					<h3>image<wbr>Path</h3>
+					<div class="tsd-signature tsd-kind-icon">image<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0bb21c7/src/pdf-from-image.ts#L27">pdf-from-image.ts:27</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>the absolute path to the image</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="requestedname" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> requested<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">requested<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0bb21c7/src/pdf-from-image.ts#L29">pdf-from-image.ts:29</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>the name you would like to have as a file name for the new image</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="successcallback" class="tsd-anchor"></a>
+					<h3>success<wbr>Callback</h3>
+					<div class="tsd-signature tsd-kind-icon">success<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.igeneratepdffromimagesuccessfn.html" class="tsd-signature-type">IGeneratePdfFromImageSuccessFn</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0bb21c7/src/pdf-from-image.ts#L24">pdf-from-image.ts:24</a></li>
+						</ul>
+					</aside>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -125,7 +174,24 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.iopenbrowserrequestfailurefn.html" class="tsd-kind-icon">IOpen<wbr>Browser<wbr>Request<wbr>Failure<wbr>Fn</a>
+						<a href="dk.igeneratepdffromimagerequest.html" class="tsd-kind-icon">IGenerate<wbr>Pdf<wbr>From<wbr>Image<wbr>Request</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dk.igeneratepdffromimagerequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dk.igeneratepdffromimagerequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dk.igeneratepdffromimagerequest.html#imagepath" class="tsd-kind-icon">image<wbr>Path</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dk.igeneratepdffromimagerequest.html#requestedname" class="tsd-kind-icon">requested<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dk.igeneratepdffromimagerequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">

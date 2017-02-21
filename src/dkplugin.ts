@@ -82,6 +82,34 @@ module dk {
             obj: IOpenBrowserRequest
         ): void;
 
+        /**
+        * Retrieve the user profile
+        */
+        getUserProfile(
+            successCallbackFn: IUserProfileSuccessFn,
+            failureCallbackFn: IUserProfileFailureFn
+        ): void;
+
+        /**
+        * Take a screenshot and save it as a file
+        */
+        generateImageFromScreenCapture(
+            obj: IGenerateImageFromScreenCaptureRequest
+        ): void;
+
+        /**
+        * Save an image as a pdf
+        */
+        generatePdfFromImage(
+            obj: IGeneratePdfFromImageRequest
+        ): void;
+
+        /**
+        * Combine multiple pdf files into a single pdf file
+        */
+        concatPdf(
+            obj: IConcatPdfRequest
+        ): void;
 
     }
 }
