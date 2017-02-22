@@ -193,5 +193,24 @@ module dk {
             obj: IStorePdfAsLocalFileRequest
         ): void;
 
+        /**
+        * Store a local file
+        * @param publicationKey is the key of the publication or an empty string (=current publication)
+	      * @param fileIdentifier is the name of the file in the local database
+        * @param fileType is the type of file
+        * @param fileContent is the content of the file
+        * @param daysUntilExpiration determines when the local file should be removed - pass in 0 if it shouldn't be removed
+        */
+        storeLocalFile(
+            publicationKey: string,
+            fileIdentifier: string,
+            fileType: LocalFileType,
+            fileContent: string,
+            daysUntilExpiration: number,
+            successCallbackFn: IStoreLocalFileSuccessFn,
+            failureCallbackFn: IStoreLocalFileFailureFn,
+            callbackIdentifier: string
+        ): void;
+
     }
 }
