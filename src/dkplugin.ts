@@ -161,9 +161,9 @@ module dk {
         ): void;
 
         /**
-        * Delete a local file, which is a file owned by a publication
-        * @param publicationKey, the key of the publication or an empty string (=current publication)
-	      * @param fileIdentifier, the name of the file in the local database
+        * Delete a local file - which is a file owned by a publication
+        * @param publicationKey is the key of the publication or an empty string (=current publication)
+	      * @param fileIdentifier is the name of the file in the local database
         */
         deleteLocalFile(
             publicationKey: string,
@@ -174,9 +174,9 @@ module dk {
         ): void;
 
         /**
-        * Get a local file, which is a file owned by a publication
-        * @param publicationKey, the key of the publication or an empty string (=current publication)
-	      * @param fileIdentifier, the name of the file in the local database
+        * Get a local file - which is a file owned by a publication
+        * @param publicationKey is the key of the publication or an empty string (=current publication)
+	      * @param fileIdentifieris the name of the file in the local database
         */
         getLocalFile(
             publicationKey: string,
