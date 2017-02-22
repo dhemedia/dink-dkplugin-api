@@ -212,5 +212,12 @@ module dk {
             callbackIdentifier: string
         ): void;
 
+        /**
+        * Get info about the current customer session
+        */
+        getCurrentSession(
+          obj: IGetCurrentSessionRequest
+        ): void;
+
     }
 }

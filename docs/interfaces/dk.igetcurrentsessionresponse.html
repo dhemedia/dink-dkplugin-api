@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IOpenPublicationRequest | d!nk DKPlugin API</title>
+	<title>IGetCurrentSessionResponse | d!nk DKPlugin API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/dk.html">dk</a>
 				</li>
 				<li>
-					<a href="dk.iopenpublicationrequest.html">IOpenPublicationRequest</a>
+					<a href="dk.igetcurrentsessionresponse.html">IGetCurrentSessionResponse</a>
 				</li>
 			</ul>
-			<h1>Interface IOpenPublicationRequest</h1>
+			<h1>Interface IGetCurrentSessionResponse</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IOpenPublicationRequest</span>
+						<a href="dk.ibasicresponse.html" class="tsd-signature-type">IBasicResponse</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">IGetCurrentSessionResponse</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -84,12 +89,11 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iopenpublicationrequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iopenpublicationrequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iopenpublicationrequest.html#publicationkey" class="tsd-kind-icon">publication<wbr>Key</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iopenpublicationrequest.html#publicationname" class="tsd-kind-icon">publication<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iopenpublicationrequest.html#storykey" class="tsd-kind-icon">story<wbr>Key</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iopenpublicationrequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="dk.igetcurrentsessionresponse.html#cbid" class="tsd-kind-icon">cb<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.igetcurrentsessionresponse.html#customer" class="tsd-kind-icon">customer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="dk.igetcurrentsessionresponse.html#message" class="tsd-kind-icon">message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="dk.igetcurrentsessionresponse.html#result" class="tsd-kind-icon">result</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.igetcurrentsessionresponse.html#sessionid" class="tsd-kind-icon">session<wbr>Id</a></li>
 							</ul>
 						</section>
 					</div>
@@ -97,85 +101,74 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="callbackidentifier" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> callback<wbr>Identifier</h3>
-					<div class="tsd-signature tsd-kind-icon">callback<wbr>Identifier<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="cbid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> cb<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">cb<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="dk.ibasicresponse.html">IBasicResponse</a>.<a href="dk.ibasicresponse.html#cbid">cbId</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/e8c24df/src/publication.ts#L37">publication.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/e8c24df/src/basic-response.ts#L12">basic-response.ts:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>callbackIdentifier allows you to distinguish between different callbacks</p>
+							<p>cbId is the callbackIdentifier that was passed in, only present if
+							that callbackIdentifier was not empty</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="failurecallback" class="tsd-anchor"></a>
-					<h3>failure<wbr>Callback</h3>
-					<div class="tsd-signature tsd-kind-icon">failure<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.iopenpublicationfailurefn.html" class="tsd-signature-type">IOpenPublicationFailureFn</a></div>
+					<a name="customer" class="tsd-anchor"></a>
+					<h3>customer</h3>
+					<div class="tsd-signature tsd-kind-icon">customer<span class="tsd-signature-symbol">:</span> <a href="dk.icustomer.html" class="tsd-signature-type">ICustomer</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/e8c24df/src/publication.ts#L35">publication.ts:35</a></li>
+							<li>Defined in session.ts:16</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="publicationkey" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> publication<wbr>Key</h3>
-					<div class="tsd-signature tsd-kind-icon">publication<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="message" class="tsd-anchor"></a>
+					<h3>message</h3>
+					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="dk.ibasicresponse.html">IBasicResponse</a>.<a href="dk.ibasicresponse.html#message">message</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/e8c24df/src/publication.ts#L31">publication.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/e8c24df/src/basic-response.ts#L7">basic-response.ts:7</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="result" class="tsd-anchor"></a>
+					<h3>result</h3>
+					<div class="tsd-signature tsd-kind-icon">result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="dk.ibasicresponse.html">IBasicResponse</a>.<a href="dk.ibasicresponse.html#result">result</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/e8c24df/src/basic-response.ts#L6">basic-response.ts:6</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The key/reference of the target publication</p>
+							<p>result indicates if call was successful</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="publicationname" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> publication<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">publication<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="sessionid" class="tsd-anchor"></a>
+					<h3>session<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">session<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/e8c24df/src/publication.ts#L33">publication.ts:33</a></li>
+							<li>Defined in session.ts:15</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The name of the target publication, is required when publicationKey is missing</p>
+							<p>the id of the session</p>
 						</div>
 					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="storykey" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> story<wbr>Key</h3>
-					<div class="tsd-signature tsd-kind-icon">story<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/e8c24df/src/publication.ts#L29">publication.ts:29</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The key of the story on which we like to open the publication</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="successcallback" class="tsd-anchor"></a>
-					<h3>success<wbr>Callback</h3>
-					<div class="tsd-signature tsd-kind-icon">success<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.iopenpublicationsuccessfn.html" class="tsd-signature-type">IOpenPublicationSuccessFn</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/e8c24df/src/publication.ts#L34">publication.ts:34</a></li>
-						</ul>
-					</aside>
 				</section>
 			</section>
 		</div>
@@ -195,25 +188,22 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.iopenpublicationrequest.html" class="tsd-kind-icon">IOpen<wbr>Publication<wbr>Request</a>
+						<a href="dk.igetcurrentsessionresponse.html" class="tsd-kind-icon">IGet<wbr>Current<wbr>Session<wbr>Response</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.iopenpublicationrequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="dk.igetcurrentsessionresponse.html#cbid" class="tsd-kind-icon">cb<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.iopenpublicationrequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a>
+								<a href="dk.igetcurrentsessionresponse.html#customer" class="tsd-kind-icon">customer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="dk.igetcurrentsessionresponse.html#message" class="tsd-kind-icon">message</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="dk.igetcurrentsessionresponse.html#result" class="tsd-kind-icon">result</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.iopenpublicationrequest.html#publicationkey" class="tsd-kind-icon">publication<wbr>Key</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.iopenpublicationrequest.html#publicationname" class="tsd-kind-icon">publication<wbr>Name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.iopenpublicationrequest.html#storykey" class="tsd-kind-icon">story<wbr>Key</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.iopenpublicationrequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a>
+								<a href="dk.igetcurrentsessionresponse.html#sessionid" class="tsd-kind-icon">session<wbr>Id</a>
 							</li>
 						</ul>
 					</li>
