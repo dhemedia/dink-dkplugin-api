@@ -176,7 +176,7 @@ module dk {
         /**
         * Get a local file - which is a file owned by a publication
         * @param publicationKey is the key of the publication or an empty string (=current publication)
-	      * @param fileIdentifieris the name of the file in the local database
+	      * @param fileIdentifier is the name of the file in the local database
         */
         getLocalFile(
             publicationKey: string,
