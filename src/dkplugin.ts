@@ -166,11 +166,11 @@ module dk {
 	      * @param fileIdentifier, the name of the file in the local database
         */
         deleteLocalFile(
-          publicationKey:string,
-          fileIdentifier:string,
-          successCallbackFn: IDeleteLocalFileSuccessFn,
-          failureCallbackFn: IDeleteLocalFileFailureFn,
-          callbackIdentifier: string
+            publicationKey: string,
+            fileIdentifier: string,
+            successCallbackFn: IDeleteLocalFileSuccessFn,
+            failureCallbackFn: IDeleteLocalFileFailureFn,
+            callbackIdentifier: string
         ): void;
 
         /**
@@ -179,11 +179,11 @@ module dk {
 	      * @param fileIdentifier, the name of the file in the local database
         */
         getLocalFile(
-          publicationKey:string,
-          fileIdentifier:string,
-          successCallbackFn: IGetLocalFileSuccessFn,
-          failureCallbackFn: IGetLocalFileFailureFn,
-          callbackIdentifier: string
+            publicationKey: string,
+            fileIdentifier: string,
+            successCallbackFn: IGetLocalFileSuccessFn,
+            failureCallbackFn: IGetLocalFileFailureFn,
+            callbackIdentifier: string
         ): void;
 
     }
