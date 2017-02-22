@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IOpenBrowserRequest | d!nk DKPlugin API</title>
+	<title>IGetLocalFileResponse | d!nk DKPlugin API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,21 +59,44 @@
 					<a href="../modules/dk.html">dk</a>
 				</li>
 				<li>
-					<a href="dk.iopenbrowserrequest.html">IOpenBrowserRequest</a>
+					<a href="dk.igetlocalfileresponse.html">IGetLocalFileResponse</a>
 				</li>
 			</ul>
-			<h1>Interface IOpenBrowserRequest</h1>
+			<h1>Interface IGetLocalFileResponse</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>param</dt>
+						<dd><p>is absolute path to the file</p>
+						</dd>
+						<dt>param</dt>
+						<dd><p>is the content type</p>
+						</dd>
+						<dt>param</dt>
+						<dd><p>is the expiration date in format &#39;yyyy-MM-dd&#39;</p>
+						</dd>
+						<dt>param</dt>
+						<dd><p>is the creation date in format &#39;yyyy-MM-dd&#39;</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IOpenBrowserRequest</span>
+						<a href="dk.ibasicresponse.html" class="tsd-signature-type">IBasicResponse</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">IGetLocalFileResponse</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -84,10 +107,13 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iopenbrowserrequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iopenbrowserrequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iopenbrowserrequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iopenbrowserrequest.html#url" class="tsd-kind-icon">url</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="dk.igetlocalfileresponse.html#cbid" class="tsd-kind-icon">cb<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.igetlocalfileresponse.html#creationdate" class="tsd-kind-icon">creation<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.igetlocalfileresponse.html#expirationdate" class="tsd-kind-icon">expiration<wbr>Date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="dk.igetlocalfileresponse.html#message" class="tsd-kind-icon">message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.igetlocalfileresponse.html#path" class="tsd-kind-icon">path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="dk.igetlocalfileresponse.html#result" class="tsd-kind-icon">result</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.igetlocalfileresponse.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -95,43 +121,87 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="cbid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> cb<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">cb<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="dk.ibasicresponse.html">IBasicResponse</a>.<a href="dk.ibasicresponse.html#cbid">cbId</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/edbe974/src/basic-response.ts#L12">basic-response.ts:12</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>cbId is the callbackIdentifier that was passed in, only present if
+							that callbackIdentifier was not empty</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="callbackidentifier" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> callback<wbr>Identifier</h3>
-					<div class="tsd-signature tsd-kind-icon">callback<wbr>Identifier<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="creationdate" class="tsd-anchor"></a>
+					<h3>creation<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">creation<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/edbe974/src/open-browser.ts#L21">open-browser.ts:21</a></li>
+							<li>Defined in file-local-get.ts:13</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="failurecallback" class="tsd-anchor"></a>
-					<h3>failure<wbr>Callback</h3>
-					<div class="tsd-signature tsd-kind-icon">failure<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.iopenbrowserrequestfailurefn.html" class="tsd-signature-type">IOpenBrowserRequestFailureFn</a></div>
+					<a name="expirationdate" class="tsd-anchor"></a>
+					<h3>expiration<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">expiration<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/edbe974/src/open-browser.ts#L19">open-browser.ts:19</a></li>
+							<li>Defined in file-local-get.ts:12</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="message" class="tsd-anchor"></a>
+					<h3>message</h3>
+					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="dk.ibasicresponse.html">IBasicResponse</a>.<a href="dk.ibasicresponse.html#message">message</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/edbe974/src/basic-response.ts#L7">basic-response.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="successcallback" class="tsd-anchor"></a>
-					<h3>success<wbr>Callback</h3>
-					<div class="tsd-signature tsd-kind-icon">success<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.iopenbrowserrequestsuccessfn.html" class="tsd-signature-type">IOpenBrowserRequestSuccessFn</a></div>
+					<a name="path" class="tsd-anchor"></a>
+					<h3>path</h3>
+					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/edbe974/src/open-browser.ts#L18">open-browser.ts:18</a></li>
+							<li>Defined in file-local-get.ts:10</li>
 						</ul>
 					</aside>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="result" class="tsd-anchor"></a>
+					<h3>result</h3>
+					<div class="tsd-signature tsd-kind-icon">result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="dk.ibasicresponse.html">IBasicResponse</a>.<a href="dk.ibasicresponse.html#result">result</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/edbe974/src/basic-response.ts#L6">basic-response.ts:6</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>result indicates if call was successful</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="url" class="tsd-anchor"></a>
-					<h3>url</h3>
-					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/edbe974/src/open-browser.ts#L20">open-browser.ts:20</a></li>
+							<li>Defined in file-local-get.ts:11</li>
 						</ul>
 					</aside>
 				</section>
@@ -153,19 +223,28 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.iopenbrowserrequest.html" class="tsd-kind-icon">IOpen<wbr>Browser<wbr>Request</a>
+						<a href="dk.igetlocalfileresponse.html" class="tsd-kind-icon">IGet<wbr>Local<wbr>File<wbr>Response</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.iopenbrowserrequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="dk.igetlocalfileresponse.html#cbid" class="tsd-kind-icon">cb<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.iopenbrowserrequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a>
+								<a href="dk.igetlocalfileresponse.html#creationdate" class="tsd-kind-icon">creation<wbr>Date</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.iopenbrowserrequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a>
+								<a href="dk.igetlocalfileresponse.html#expirationdate" class="tsd-kind-icon">expiration<wbr>Date</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="dk.igetlocalfileresponse.html#message" class="tsd-kind-icon">message</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.iopenbrowserrequest.html#url" class="tsd-kind-icon">url</a>
+								<a href="dk.igetlocalfileresponse.html#path" class="tsd-kind-icon">path</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="dk.igetlocalfileresponse.html#result" class="tsd-kind-icon">result</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dk.igetlocalfileresponse.html#type" class="tsd-kind-icon">type</a>
 							</li>
 						</ul>
 					</li>

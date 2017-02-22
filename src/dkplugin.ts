@@ -160,5 +160,31 @@ module dk {
             callbackIdentifier: string
         ): void;
 
+        /**
+        * Delete a local file, which is a file owned by a publication
+        * @param publicationKey, the key of the publication or an empty string (=current publication)
+	      * @param fileIdentifier, the name of the file in the local database
+        */
+        deleteLocalFile(
+          publicationKey:string,
+          fileIdentifier:string,
+          successCallbackFn: IDeleteLocalFileSuccessFn,
+          failureCallbackFn: IDeleteLocalFileFailureFn,
+          callbackIdentifier: string
+        ): void;
+
+        /**
+        * Get a local file, which is a file owned by a publication
+        * @param publicationKey, the key of the publication or an empty string (=current publication)
+	      * @param fileIdentifier, the name of the file in the local database
+        */
+        getLocalFile(
+          publicationKey:string,
+          fileIdentifier:string,
+          successCallbackFn: IGetLocalFileSuccessFn,
+          failureCallbackFn: IGetLocalFileFailureFn,
+          callbackIdentifier: string
+        ): void;
+
     }
 }
