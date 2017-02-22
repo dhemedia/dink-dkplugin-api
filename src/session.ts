@@ -13,7 +13,7 @@ module dk {
     export interface IGetCurrentSessionResponse extends IBasicResponse {
         /** the id of the session */
         sessionId: string;
-        customer: ICustomer;
+        customer?: ICustomer;
     }
 
     /**
