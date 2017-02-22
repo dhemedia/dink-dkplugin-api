@@ -186,5 +186,12 @@ module dk {
             callbackIdentifier: string
         ): void;
 
+        /**
+        * Store a pdf as a local file - which is a file owned by a publication
+        */
+        storePdfAsLocalFile(
+            obj: IStorePdfAsLocalFileRequest
+        ): void;
+
     }
 }
