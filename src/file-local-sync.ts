@@ -1,9 +1,9 @@
 module dk {
 
-    /**
-    @param transactionId is the key of the transaction that was created
-    */
     export interface ISyncLocalFilesResponse extends IBasicResponse {
+        /**
+         transactionId is the key of the transaction that was created
+        */
         transactionId: string;
     }
 
