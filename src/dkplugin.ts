@@ -41,6 +41,13 @@ module dk {
         ): void;
 
         /**
+        * Open a kiosk from the within the current publication
+        */
+        openKiosk(
+            obj: IOpenKioskRequest
+        ): void;
+
+        /**
         * Show a local pdf document in a pdf viewer
         */
         showPdfDocument(
