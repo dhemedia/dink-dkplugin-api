@@ -19,6 +19,9 @@ module dk{
     failureCallback: IAddPdfToMicroSiteFailureFn;
     fileName:string;
     callbackIdentifier?: string;
+    /** The key/reference of the target publication */
     publicationKey?: string;
+    /** The name of the target publication, is required when publicationKey is missing*/
+    publicationName?: string;
   }
 }
