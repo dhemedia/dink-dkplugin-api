@@ -34,14 +34,14 @@ module dk {
         ): void;
 
         /**
-        * Open another publication from the within the current publication
+        * Open another publication from within the current publication
         */
         openPublication(
             obj: IOpenPublicationRequest
         ): void;
 
         /**
-        * Open a kiosk from the within the current publication
+        * Open a kiosk from within the current publication
         */
         openKiosk(
             obj: IOpenKioskRequest
