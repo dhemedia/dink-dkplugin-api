@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IMailLocalPdfDocumentsRequest | d!nk DKPlugin API</title>
+	<title>IPublicationState | d!nk DKPlugin API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/dk.html">dk</a>
 				</li>
 				<li>
-					<a href="dk.imaillocalpdfdocumentsrequest.html">IMailLocalPdfDocumentsRequest</a>
+					<a href="dk.ipublicationstate.html">IPublicationState</a>
 				</li>
 			</ul>
-			<h1>Interface IMailLocalPdfDocumentsRequest</h1>
+			<h1>Interface IPublicationState</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IMailLocalPdfDocumentsRequest</span>
+						<span class="target">IPublicationState</span>
 					</li>
 				</ul>
 			</section>
@@ -84,15 +84,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.imaillocalpdfdocumentsrequest.html#body" class="tsd-kind-icon">body</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.imaillocalpdfdocumentsrequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.imaillocalpdfdocumentsrequest.html#ccrecipients" class="tsd-kind-icon">cc<wbr>Recipients</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.imaillocalpdfdocumentsrequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.imaillocalpdfdocumentsrequest.html#filenames" class="tsd-kind-icon">file<wbr>Names</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.imaillocalpdfdocumentsrequest.html#publicationkey" class="tsd-kind-icon">publication<wbr>Key</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.imaillocalpdfdocumentsrequest.html#recipients" class="tsd-kind-icon">recipients</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.imaillocalpdfdocumentsrequest.html#subject" class="tsd-kind-icon">subject</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.imaillocalpdfdocumentsrequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ipublicationstate.html#magjetname" class="tsd-kind-icon">magjet<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ipublicationstate.html#publicationkey" class="tsd-kind-icon">publication<wbr>Key</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ipublicationstate.html#state" class="tsd-kind-icon">state</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ipublicationstate.html#storykey" class="tsd-kind-icon">story<wbr>Key</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,119 +96,59 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="body" class="tsd-anchor"></a>
-					<h3>body</h3>
-					<div class="tsd-signature tsd-kind-icon">body<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="magjetname" class="tsd-anchor"></a>
+					<h3>magjet<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">magjet<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0b94a2b/src/pdf-mail-local.ts#L27">pdf-mail-local.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0b94a2b/src/publication-get-state.ts#L8">publication-get-state.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>the body of the email</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="callbackidentifier" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> callback<wbr>Identifier</h3>
-					<div class="tsd-signature tsd-kind-icon">callback<wbr>Identifier<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0b94a2b/src/pdf-mail-local.ts#L22">pdf-mail-local.ts:22</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="ccrecipients" class="tsd-anchor"></a>
-					<h3>cc<wbr>Recipients</h3>
-					<div class="tsd-signature tsd-kind-icon">cc<wbr>Recipients<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0b94a2b/src/pdf-mail-local.ts#L33">pdf-mail-local.ts:33</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>ccRecipients should be list of email addresses</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="failurecallback" class="tsd-anchor"></a>
-					<h3>failure<wbr>Callback</h3>
-					<div class="tsd-signature tsd-kind-icon">failure<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.imaillocalpdfdocumentsfailurefn.html" class="tsd-signature-type">IMailLocalPdfDocumentsFailureFn</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0b94a2b/src/pdf-mail-local.ts#L21">pdf-mail-local.ts:21</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="filenames" class="tsd-anchor"></a>
-					<h3>file<wbr>Names</h3>
-					<div class="tsd-signature tsd-kind-icon">file<wbr>Names<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0b94a2b/src/pdf-mail-local.ts#L25">pdf-mail-local.ts:25</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>the names of the pdf files you wish to include</p>
+							<p>magjetName is the key which will enable you to look up the data</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="publicationkey" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> publication<wbr>Key</h3>
+					<h3>publication<wbr>Key</h3>
 					<div class="tsd-signature tsd-kind-icon">publication<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0b94a2b/src/pdf-mail-local.ts#L23">pdf-mail-local.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0b94a2b/src/publication-get-state.ts#L4">publication-get-state.ts:4</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="recipients" class="tsd-anchor"></a>
-					<h3>recipients</h3>
-					<div class="tsd-signature tsd-kind-icon">recipients<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<a name="state" class="tsd-anchor"></a>
+					<h3>state</h3>
+					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0b94a2b/src/pdf-mail-local.ts#L31">pdf-mail-local.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0b94a2b/src/publication-get-state.ts#L10">publication-get-state.ts:10</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>recipients should be list of email addresses</p>
+							<p>state is a json stringified object</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="subject" class="tsd-anchor"></a>
-					<h3>subject</h3>
-					<div class="tsd-signature tsd-kind-icon">subject<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="storykey" class="tsd-anchor"></a>
+					<h3>story<wbr>Key</h3>
+					<div class="tsd-signature tsd-kind-icon">story<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0b94a2b/src/pdf-mail-local.ts#L29">pdf-mail-local.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0b94a2b/src/publication-get-state.ts#L6">publication-get-state.ts:6</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>the subject of the email</p>
+							<p>storyKey is the namespace in which the data is stored</p>
 						</div>
 					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="successcallback" class="tsd-anchor"></a>
-					<h3>success<wbr>Callback</h3>
-					<div class="tsd-signature tsd-kind-icon">success<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.imaillocalpdfdocumentssuccessfn.html" class="tsd-signature-type">IMailLocalPdfDocumentsSuccessFn</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0b94a2b/src/pdf-mail-local.ts#L20">pdf-mail-local.ts:20</a></li>
-						</ul>
-					</aside>
 				</section>
 			</section>
 		</div>
@@ -233,34 +168,19 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.imaillocalpdfdocumentsrequest.html" class="tsd-kind-icon">IMail<wbr>Local<wbr>Pdf<wbr>Documents<wbr>Request</a>
+						<a href="dk.ipublicationstate.html" class="tsd-kind-icon">IPublication<wbr>State</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.imaillocalpdfdocumentsrequest.html#body" class="tsd-kind-icon">body</a>
+								<a href="dk.ipublicationstate.html#magjetname" class="tsd-kind-icon">magjet<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.imaillocalpdfdocumentsrequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a>
+								<a href="dk.ipublicationstate.html#publicationkey" class="tsd-kind-icon">publication<wbr>Key</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.imaillocalpdfdocumentsrequest.html#ccrecipients" class="tsd-kind-icon">cc<wbr>Recipients</a>
+								<a href="dk.ipublicationstate.html#state" class="tsd-kind-icon">state</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.imaillocalpdfdocumentsrequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.imaillocalpdfdocumentsrequest.html#filenames" class="tsd-kind-icon">file<wbr>Names</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.imaillocalpdfdocumentsrequest.html#publicationkey" class="tsd-kind-icon">publication<wbr>Key</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.imaillocalpdfdocumentsrequest.html#recipients" class="tsd-kind-icon">recipients</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.imaillocalpdfdocumentsrequest.html#subject" class="tsd-kind-icon">subject</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.imaillocalpdfdocumentsrequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a>
+								<a href="dk.ipublicationstate.html#storykey" class="tsd-kind-icon">story<wbr>Key</a>
 							</li>
 						</ul>
 					</li>

@@ -76,6 +76,35 @@ module dk {
         ): void;
 
         /**
+        * recordState will save the desired publication state
+        * @param storyKey is the namespace in which you want to store your data
+        * @param magjetName is the key which will enable you to look up the data
+        * @param state should be a json stringified object
+        */
+        recordState(
+            publicationReference: string,
+            storyKey: string,
+            magjetName: string,
+            state: string,
+            successCallbackFn: IRecordStateSuccessFn,
+            failureCallbackFn: IRecordStateFailureFn
+        ): void;
+
+        /**
+        * getState will retrieve the recorded publication state
+        * @param storyKey is the namespace in which the data is stored
+        * @param magjetName is the key which will enable you to look up the data
+        */
+        getState(
+            publicationReference: string,
+            storyKey: string,
+            magjetName: string,
+            successCallbackFn: IGetStateSuccessFn,
+            failureCallbackFn: IGetStateFailureFn
+        ): void;
+
+
+        /**
         * Add pdf document to microsite
         */
         addPdfToMicroSite(
@@ -223,7 +252,7 @@ module dk {
         * Get info about the current customer session
         */
         getCurrentSession(
-          obj: IGetCurrentSessionRequest
+            obj: IGetCurrentSessionRequest
         ): void;
 
     }
