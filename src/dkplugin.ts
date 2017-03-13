@@ -77,6 +77,7 @@ module dk {
 
         /**
         * recordState will save the desired publication state
+        * @param publicationReference is an identifier for the publication, usually the publication name
         * @param storyKey is the namespace in which you want to store your data
         * @param magjetName is the key which will enable you to look up the data
         * @param state should be a json stringified object
@@ -92,6 +93,7 @@ module dk {
 
         /**
         * getState will retrieve the recorded publication state
+        * @param publicationReference is an identifier for the publication, usually the publication name
         * @param storyKey is the namespace in which the data is stored
         * @param magjetName is the key which will enable you to look up the data
         */
