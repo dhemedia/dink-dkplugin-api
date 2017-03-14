@@ -17,7 +17,8 @@ module dk {
         ): void;
 
         /**
-        * Retrieve details about the current publication
+        * Retrieve details about the publication
+        * @param publicationReference is an identifier for the publication, pass in empty string to retrieve current publication
         */
         getPublicationDetails(
             publicationReference: string,
