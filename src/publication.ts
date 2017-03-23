@@ -31,6 +31,11 @@ module dk {
         publicationKey?: string;
         /** The name of the target publication, is required when publicationKey is missing*/
         publicationName?: string;
+        /**
+          Indicates if you want to return to previous publication upon exiting/closing the publication,
+          default value is false
+        */
+        returnToPreviousPublicationWhenClose?: boolean;
         successCallback: IOpenPublicationSuccessFn;
         failureCallback: IOpenPublicationFailureFn;
         /** callbackIdentifier allows you to distinguish between different callbacks */
