@@ -42,6 +42,13 @@ module dk {
         ): void;
 
         /**
+        * Close current publication
+        */
+        closeCurrentPublication(
+            obj: ICloseCurrentPublicationRequest
+        ): void;
+
+        /**
         * Open a kiosk from within the current publication
         */
         openKiosk(

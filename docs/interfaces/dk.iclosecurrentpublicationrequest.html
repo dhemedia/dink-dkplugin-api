@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IPublicationStateResponse | d!nk DKPlugin API</title>
+	<title>ICloseCurrentPublicationRequest | d!nk DKPlugin API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,28 +59,21 @@
 					<a href="../modules/dk.html">dk</a>
 				</li>
 				<li>
-					<a href="dk.ipublicationstateresponse.html">IPublicationStateResponse</a>
+					<a href="dk.iclosecurrentpublicationrequest.html">ICloseCurrentPublicationRequest</a>
 				</li>
 			</ul>
-			<h1>Interface IPublicationStateResponse</h1>
+			<h1>Interface ICloseCurrentPublicationRequest</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>The response to a successful getState request.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IPublicationStateResponse</span>
+						<span class="target">ICloseCurrentPublicationRequest</span>
 					</li>
 				</ul>
 			</section>
@@ -91,7 +84,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ipublicationstateresponse.html#state" class="tsd-kind-icon">state</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iclosecurrentpublicationrequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iclosecurrentpublicationrequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iclosecurrentpublicationrequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,12 +95,37 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="state" class="tsd-anchor"></a>
-					<h3>state</h3>
-					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <a href="dk.ipublicationstate.html" class="tsd-signature-type">IPublicationState</a></div>
+					<a name="callbackidentifier" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> callback<wbr>Identifier</h3>
+					<div class="tsd-signature tsd-kind-icon">callback<wbr>Identifier<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/297e9ea/src/publication-get-state.ts#L17">publication-get-state.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/297e9ea/src/publication-close.ts#L25">publication-close.ts:25</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>callbackIdentifier allows you to distinguish between different callbacks</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="failurecallback" class="tsd-anchor"></a>
+					<h3>failure<wbr>Callback</h3>
+					<div class="tsd-signature tsd-kind-icon">failure<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.iclosecurrentpublicationfailurefn.html" class="tsd-signature-type">ICloseCurrentPublicationFailureFn</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/297e9ea/src/publication-close.ts#L23">publication-close.ts:23</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="successcallback" class="tsd-anchor"></a>
+					<h3>success<wbr>Callback</h3>
+					<div class="tsd-signature tsd-kind-icon">success<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.iclosecurrentpublicationsuccessfn.html" class="tsd-signature-type">ICloseCurrentPublicationSuccessFn</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/297e9ea/src/publication-close.ts#L22">publication-close.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -127,10 +147,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.ipublicationstateresponse.html" class="tsd-kind-icon">IPublication<wbr>State<wbr>Response</a>
+						<a href="dk.iclosecurrentpublicationrequest.html" class="tsd-kind-icon">IClose<wbr>Current<wbr>Publication<wbr>Request</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.ipublicationstateresponse.html#state" class="tsd-kind-icon">state</a>
+								<a href="dk.iclosecurrentpublicationrequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dk.iclosecurrentpublicationrequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dk.iclosecurrentpublicationrequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a>
 							</li>
 						</ul>
 					</li>
