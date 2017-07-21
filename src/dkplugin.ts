@@ -265,5 +265,162 @@ module dk {
             obj: IGetCurrentSessionRequest
         ): void;
 
+        /**
+        * Get metadata for a CRM entity.
+        * This is only available for customers who have enabled CRM integration.
+        */
+        getMetaDataForEntity(
+            obj: IGetMetaDataForEntityRequest
+        ): void;
+
+        /**
+        * Get queries for a CRM entity.
+        * This is only available for customers who have enabled CRM integration.
+        */
+        getQueriesForEntity(
+            obj: IGetQueriesForEntityRequest
+        ): void;
+
+        /**
+        * Get CRM entities by query.
+        * This is only available for customers who have enabled CRM integration.
+        */
+        getEntitiesFromQuery(
+            obj: IGetEntitiesFromQueryRequest
+        ): void;
+
+        /**
+        * Get related CRM entities.
+        * This is only available for customers who have enabled CRM integration.
+        */
+        getRelatedEntities(
+            obj: IGetRelatedEntitiesRequest
+        ): void;
+
+        /**
+        * Search for CRM entities.
+        * This is only available for customers who have enabled CRM integration.
+        */
+        getEntitiesFromSearch(
+            obj: IGetEntitiesFromSearchRequest
+        ): void;
+
+        /**
+        * Store a CRM entity for offline usage.
+        * This is only available for customers who have enabled CRM integration.
+        */
+        setCrmOfflineEntity(
+            obj: ISetCrmOfflineEntityRequest
+        ): void;
+
+        /**
+        * Decide if the CRM will fetch online data or just local, offline data.
+        * This is only available for customers who have enabled CRM integration.
+        */
+        setIsCrmOnlineSearch(
+            obj: ISetIsCrmOnlineSearchRequest
+        ): void;
+
+        /**
+        * Register a listener that will be called when the network status changes.
+        */
+        registerNetworkStatusChangeListener(
+            obj: IRegisterNetworkStatusChangeListenerRequest
+        ): void;
+
+        /**
+        * Register a listener that will be called when the queue size changes.
+        * This is only available for customers who have enabled CRM integration.
+        */
+        registerQueueSizeChangeListener(
+            obj: IRegisterQueueSizeChangeListenerRequest
+        ): void;
+
+        /**
+        * Add or update a related CRM entity.
+        * This is only available for customers who have enabled CRM integration.
+        */
+        addOrUpdateRelatedEntity(
+            obj: IAddOrUpdateRelatedEntityRequest
+        ): void;
+
+        /**
+        * Get visit analytics reports of CRM entity.
+        * This is only available for customers who have enabled CRM integration.
+        */
+        getVisitAnalyticsReports(
+            obj: IGetVisitAnalyticsReportsRequest
+        ): void;
+
+        /**
+        * Start preparation of meeting.
+        * This is only available for customers who have enabled CRM integration.
+        */
+        startPreparation(
+            obj: IStartPreparationRequest
+        ): void;
+
+        /**
+        * Get specific meeting preparation.
+        * This is only available for customers who have enabled CRM integration.
+        */
+        getPreparation(
+            obj: IGetPreparationRequest
+        ): void;
+
+        /**
+        * Get current meeting preparation.
+        * This is only available for customers who have enabled CRM integration.
+        */
+        getCurrentPreparation(
+            obj: IGetCurrentPreparationRequest
+        ): void;
+
+        /**
+        * Stop active meeting preparation.
+        * This is only available for customers who have enabled CRM integration.
+        */
+        stopPreparation(
+            obj: IStopPreparationRequest
+        ): void;
+
+        /**
+        * Start meeting.
+        * This is only available for customers who have enabled CRM integration.
+        */
+        startMeeting(
+            obj: IStartMeetingRequest
+        ): void;
+
+        /**
+        * Get current meeting.
+        * This is only available for customers who have enabled CRM integration.
+        */
+        getCurrentMeeting(
+            obj: IGetCurrentMeetingRequest
+        ): void;
+
+        /**
+        * Stop meeting.
+        * This is only available for customers who have enabled CRM integration.
+        */
+        stopMeeting(
+            obj: IStopMeetingRequest
+        ): void;
+
+        /**
+        * Get cover of specific publication
+        */
+        getPublicationCover(
+            obj: IGetPublicationCoverRequest
+        ): void;
+
+        /**
+        * Get picture by url.
+        */
+        getPictureByUrl(
+            obj: IGetPictureByUrlRequest
+        ): void;
+
     }
 }
