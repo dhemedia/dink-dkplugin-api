@@ -422,5 +422,15 @@ module dk {
             obj: IGetPictureByUrlRequest
         ): void;
 
+        /**
+        * Show a native alert popup
+        * @param message the message to be shown
+        * @param title the title of the popup
+        */
+        alert(
+            message: string,
+            title?: string,
+        ): void;
+
     }
 }
