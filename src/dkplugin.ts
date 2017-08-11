@@ -298,6 +298,14 @@ module dk {
         ): void;
 
         /**
+        * Get CRM entities.
+        * This is only available for customers who have enabled CRM integration.
+        */
+        getEntities(
+            obj: IGetEntitiesRequest
+        ): void;
+
+        /**
         * Search for CRM entities.
         * This is only available for customers who have enabled CRM integration.
         */
