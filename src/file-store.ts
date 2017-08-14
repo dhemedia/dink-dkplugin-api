@@ -26,14 +26,15 @@ module dk {
         callbackIdentifier?: string;
         fileName: string;
         fileType: LocalFileType;
-        /** The contents of the file, a base-64 encoded string if png, jpg or pdf */
+        /** The contents of the file, a base-64 encoded string if png, jpg or pdf. */
         fileContent: string;
+        /** For how many days do you want to store the file? 0 = forever. */
         daysUntilExpiration: number;
         /** Limit the scope of the file to a specific publication.
-            Empty string is equal to current publication (if available)
+            Empty string is equal to current publication (if available).
         */
         publicationKey?: string;
-        /** Should existing files with the same name be overwritten? Default is false */
+        /** Should existing files with the same name be overwritten? Default is false. */
         overwriteExistingFile?: boolean;
         /** Information about the last time this file was updated.
             Handy when deciding if the file should be updated.

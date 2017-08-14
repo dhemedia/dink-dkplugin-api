@@ -233,6 +233,13 @@ module dk {
         ): void;
 
         /**
+        * Get a file, only available in beta versions
+        */
+        getFile(
+            obj: IGetFileRequest
+        ): void;
+
+        /**
         * Store a pdf as a local file - which is a file owned by a publication
         */
         storePdfAsLocalFile(
@@ -259,8 +266,7 @@ module dk {
         ): void;
 
         /**
-        * Store a file
-        * Only available in beta versions
+        * Store a file, only available in beta versions
         */
         storeFile(
             obj: IStoreFileRequest
