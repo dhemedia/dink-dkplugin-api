@@ -287,6 +287,14 @@ module dk {
         ): void;
 
         /**
+        * Get CRM configuration.
+        * This is only available for customers who have enabled CRM integration.
+        */
+        getCrmConfiguration(
+            obj: IGetCrmConfigurationRequest
+        ): void;
+
+        /**
         * Get metadata for a CRM entity.
         * This is only available for customers who have enabled CRM integration.
         */
