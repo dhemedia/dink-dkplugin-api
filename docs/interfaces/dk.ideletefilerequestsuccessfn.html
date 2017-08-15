@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IStartPreparationRequest | d!nk DKPlugin API</title>
+	<title>IDeleteFileRequestSuccessFn | d!nk DKPlugin API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,115 +59,55 @@
 					<a href="../modules/dk.html">dk</a>
 				</li>
 				<li>
-					<a href="dk.istartpreparationrequest.html">IStartPreparationRequest</a>
+					<a href="dk.ideletefilerequestsuccessfn.html">IDeleteFileRequestSuccessFn</a>
 				</li>
 			</ul>
-			<h1>Interface IStartPreparationRequest</h1>
+			<h1>Interface IDeleteFileRequestSuccessFn</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IStartPreparationRequest</span>
+						<span class="target">IDeleteFileRequestSuccessFn</span>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.istartpreparationrequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.istartpreparationrequest.html#comments" class="tsd-kind-icon">comments</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.istartpreparationrequest.html#dinkregardingentityname" class="tsd-kind-icon">dink<wbr>Regarding<wbr>Entity<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.istartpreparationrequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.istartpreparationrequest.html#regardingid" class="tsd-kind-icon">regarding<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.istartpreparationrequest.html#subject" class="tsd-kind-icon">subject</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.istartpreparationrequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a></li>
+			<section class="tsd-panel">
+				<h3 class="tsd-before-signature">Callable</h3>
+				<ul class="tsd-signatures tsd-kind-interface tsd-parent-kind-module">
+					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/059e35b/src/file-delete.ts#L7">file-delete.ts:7</a></li>
 							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="callbackidentifier" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> callback<wbr>Identifier</h3>
-					<div class="tsd-signature tsd-kind-icon">callback<wbr>Identifier<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/059e35b/src/start-preparation.ts#L21">start-preparation.ts:21</a></li>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>result: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>a json stringified IBasicResponse object,
+										so you&#39;ll need to parse the json before accessing the IBasicResponse properties</p>
+									</div>
+								</div>
+							</li>
 						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="comments" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> comments</h3>
-					<div class="tsd-signature tsd-kind-icon">comments<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/059e35b/src/start-preparation.ts#L25">start-preparation.ts:25</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="dinkregardingentityname" class="tsd-anchor"></a>
-					<h3>dink<wbr>Regarding<wbr>Entity<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">dink<wbr>Regarding<wbr>Entity<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/059e35b/src/start-preparation.ts#L23">start-preparation.ts:23</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="failurecallback" class="tsd-anchor"></a>
-					<h3>failure<wbr>Callback</h3>
-					<div class="tsd-signature tsd-kind-icon">failure<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.istartpreparationrequestfailurefn.html" class="tsd-signature-type">IStartPreparationRequestFailureFn</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/059e35b/src/start-preparation.ts#L20">start-preparation.ts:20</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="regardingid" class="tsd-anchor"></a>
-					<h3>regarding<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">regarding<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/059e35b/src/start-preparation.ts#L22">start-preparation.ts:22</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="subject" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> subject</h3>
-					<div class="tsd-signature tsd-kind-icon">subject<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/059e35b/src/start-preparation.ts#L24">start-preparation.ts:24</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="successcallback" class="tsd-anchor"></a>
-					<h3>success<wbr>Callback</h3>
-					<div class="tsd-signature tsd-kind-icon">success<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.istartpreparationrequestsuccessfn.html" class="tsd-signature-type">IStartPreparationRequestSuccessFn</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/059e35b/src/start-preparation.ts#L19">start-preparation.ts:19</a></li>
-						</ul>
-					</aside>
-				</section>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span></h4>
+					</li>
+				</ul>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -186,30 +126,7 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.istartpreparationrequest.html" class="tsd-kind-icon">IStart<wbr>Preparation<wbr>Request</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.istartpreparationrequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.istartpreparationrequest.html#comments" class="tsd-kind-icon">comments</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.istartpreparationrequest.html#dinkregardingentityname" class="tsd-kind-icon">dink<wbr>Regarding<wbr>Entity<wbr>Name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.istartpreparationrequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.istartpreparationrequest.html#regardingid" class="tsd-kind-icon">regarding<wbr>Id</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.istartpreparationrequest.html#subject" class="tsd-kind-icon">subject</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.istartpreparationrequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a>
-							</li>
-						</ul>
+						<a href="dk.ideletefilerequestsuccessfn.html" class="tsd-kind-icon">IDelete<wbr>File<wbr>Request<wbr>Success<wbr>Fn</a>
 					</li>
 				</ul>
 				<ul class="after-current">

@@ -209,7 +209,7 @@ module dk {
         /**
         * Delete a local file - which is a file owned by a publication
         * @param publicationKey is the key of the publication or an empty string (=current publication)
-	      * @param fileIdentifier is the name of the file in the local database
+	    * @param fileIdentifier is the name of the file in the local database
         */
         deleteLocalFile(
             publicationKey: string,
@@ -220,9 +220,16 @@ module dk {
         ): void;
 
         /**
+        * Delete a file, only available in beta versions
+        */
+        deleteFile(
+            obj: IDeleteFileRequest
+        ): void;
+
+        /**
         * Get a local file - which is a file owned by a publication
         * @param publicationKey is the key of the publication or an empty string (=current publication)
-	      * @param fileIdentifier is the name of the file in the local database
+	    * @param fileIdentifier is the name of the file in the local database
         */
         getLocalFile(
             publicationKey: string,
