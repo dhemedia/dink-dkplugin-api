@@ -26,6 +26,7 @@ module dk {
         dinkEntityName: string;
         logicalName: string;
         id: string;
+        forceRefresh: boolean;
     }
 
 }
