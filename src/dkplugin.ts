@@ -247,6 +247,14 @@ module dk {
         ): void;
 
         /**
+        * Get file contents, only available in beta versions.
+        * For .png, .jpg, .txt and .json files only.
+        */
+        getFileContents(
+            obj: IGetFileContentsRequest
+        ): void;
+
+        /**
         * Store a pdf as a local file - which is a file owned by a publication
         */
         storePdfAsLocalFile(
