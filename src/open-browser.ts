@@ -24,6 +24,10 @@ module dk {
         */
         refreshWhenReturningToPublication?: boolean;
         callbackIdentifier?: string;
+        /**
+          Reference for LMS platform
+        */
+        referenceId?: string;
     }
 
 }

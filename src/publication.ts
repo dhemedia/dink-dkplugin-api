@@ -40,5 +40,9 @@ module dk {
         failureCallback: IOpenPublicationFailureFn;
         /** callbackIdentifier allows you to distinguish between different callbacks */
         callbackIdentifier?: string;
+        /**
+          Reference for LMS platform
+        */
+        referenceId?: string;
     }
 }
