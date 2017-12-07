@@ -36,6 +36,11 @@ module dk {
           default value is false
         */
         returnToPreviousPublicationWhenClosed?: boolean;
+        /**
+          Indicates if you want to refresh the previous publication when returning to it, only applicable if returnToPreviousPublicationWhenClosed is true 
+          default value is false
+        */
+        refreshWhenReturningToPreviousPublication?: boolean;
         successCallback: IOpenPublicationSuccessFn;
         failureCallback: IOpenPublicationFailureFn;
         /** callbackIdentifier allows you to distinguish between different callbacks */
