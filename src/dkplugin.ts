@@ -390,6 +390,14 @@ module dk {
         ): void;
 
         /**
+        * Get documents related to an entity
+        * This is only available for customers who have enabled CRM integration.
+        */
+        getEntityRelatedDocuments(
+            obj: IGetEntityRelatedDocumentsRequest
+        ): void;
+
+        /**
         * Get visit analytics reports of CRM entity.
         * This is only available for customers who have enabled CRM integration.
         */
