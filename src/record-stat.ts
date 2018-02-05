@@ -7,6 +7,10 @@ module dk {
         storyId: number;
         /** formatted date yyyy-MM-dd HH:mm:ss.sss */
         creationDate: string;
+        /** time in utc format yyyy-MM-ddTHH:mm:ssZ */
+        creationDateUtc: string;
+        /** local time in ISO8601 format. Example: yyyy-MM-ddTHH:mm:ss+01:00 */
+        creationDateLocal: string;
         /** p for portrait, l for landscape */
         orientation: "l";
         /** mode is deprecated, set to "full_version" */
@@ -31,6 +35,10 @@ module dk {
         isComplete: boolean;
         /** formatted creation date yyyy-MM-dd HH:mm:ss.sss */
         creationDate: string;
+        /** time in utc format yyyy-MM-ddTHH:mm:ssZ */
+        creationDateUtc: string;
+        /** local time in ISO8601 format. Example: yyyy-MM-ddTHH:mm:ss+01:00 */
+        creationDateLocal: string;
     }
 
 
