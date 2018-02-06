@@ -10,7 +10,7 @@ module dk {
         n: string;
         /** The comma separated names of the collections to which the publication belongs */
         c: string;
-        /** The current edition name */
+        /** The current edition key */
         e: string;
         /** The type of publication */
         t: string;
