@@ -25,5 +25,7 @@ module dk {
         failureCallback: IAnalyticEventFailureFn;
         /** callbackIdentifier allows you to distinguish between different callbacks */
         callbackIdentifier?: string;
+        /** Is the data considered valid input? Default is false. */
+        isValid?: boolean;
     }
 }
