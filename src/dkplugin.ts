@@ -390,6 +390,14 @@ module dk {
         ): void;
 
         /**
+        * Delete a CRM entity.
+        * This is only available for customers who have enabled CRM integration.
+        */
+        deleteEntity(
+            obj: IDeleteEntityRequest
+        ): void;
+
+        /**
         * Get documents related to an entity
         * This is only available for customers who have enabled CRM integration.
         */
