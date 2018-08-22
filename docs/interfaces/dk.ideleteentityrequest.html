@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IGetMetaDataForEntityRequest | d!nk DKPlugin API</title>
+	<title>IDeleteEntityRequest | d!nk DKPlugin API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/dk.html">dk</a>
 				</li>
 				<li>
-					<a href="dk.igetmetadataforentityrequest.html">IGetMetaDataForEntityRequest</a>
+					<a href="dk.ideleteentityrequest.html">IDeleteEntityRequest</a>
 				</li>
 			</ul>
-			<h1>Interface IGetMetaDataForEntityRequest</h1>
+			<h1>Interface IDeleteEntityRequest</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IGetMetaDataForEntityRequest</span>
+						<span class="target">IDeleteEntityRequest</span>
 					</li>
 				</ul>
 			</section>
@@ -84,10 +84,11 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.igetmetadataforentityrequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.igetmetadataforentityrequest.html#dinkentityname" class="tsd-kind-icon">dink<wbr>Entity<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.igetmetadataforentityrequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.igetmetadataforentityrequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ideleteentityrequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ideleteentityrequest.html#dinkentityname" class="tsd-kind-icon">dink<wbr>Entity<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ideleteentityrequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ideleteentityrequest.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ideleteentityrequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,7 +102,7 @@
 					<div class="tsd-signature tsd-kind-icon">callback<wbr>Identifier<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0ebb31d/src/metadata-entity.ts#L53">metadata-entity.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0ebb31d/src/delete-entity.ts#L21">delete-entity.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -111,27 +112,37 @@
 					<div class="tsd-signature tsd-kind-icon">dink<wbr>Entity<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0ebb31d/src/metadata-entity.ts#L52">metadata-entity.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0ebb31d/src/delete-entity.ts#L23">delete-entity.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="failurecallback" class="tsd-anchor"></a>
 					<h3>failure<wbr>Callback</h3>
-					<div class="tsd-signature tsd-kind-icon">failure<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.igetmetadataforentityrequestfailurefn.html" class="tsd-signature-type">IGetMetaDataForEntityRequestFailureFn</a></div>
+					<div class="tsd-signature tsd-kind-icon">failure<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.ideleteentityrequestfailurefn.html" class="tsd-signature-type">IDeleteEntityRequestFailureFn</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0ebb31d/src/metadata-entity.ts#L51">metadata-entity.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0ebb31d/src/delete-entity.ts#L20">delete-entity.ts:20</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="id" class="tsd-anchor"></a>
+					<h3>id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0ebb31d/src/delete-entity.ts#L22">delete-entity.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="successcallback" class="tsd-anchor"></a>
 					<h3>success<wbr>Callback</h3>
-					<div class="tsd-signature tsd-kind-icon">success<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.igetmetadataforentityrequestsuccessfn.html" class="tsd-signature-type">IGetMetaDataForEntityRequestSuccessFn</a></div>
+					<div class="tsd-signature tsd-kind-icon">success<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.ideleteentityrequestsuccessfn.html" class="tsd-signature-type">IDeleteEntityRequestSuccessFn</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0ebb31d/src/metadata-entity.ts#L50">metadata-entity.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/0ebb31d/src/delete-entity.ts#L19">delete-entity.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -153,19 +164,22 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.igetmetadataforentityrequest.html" class="tsd-kind-icon">IGet<wbr>Meta<wbr>Data<wbr>For<wbr>Entity<wbr>Request</a>
+						<a href="dk.ideleteentityrequest.html" class="tsd-kind-icon">IDelete<wbr>Entity<wbr>Request</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.igetmetadataforentityrequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a>
+								<a href="dk.ideleteentityrequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.igetmetadataforentityrequest.html#dinkentityname" class="tsd-kind-icon">dink<wbr>Entity<wbr>Name</a>
+								<a href="dk.ideleteentityrequest.html#dinkentityname" class="tsd-kind-icon">dink<wbr>Entity<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.igetmetadataforentityrequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a>
+								<a href="dk.ideleteentityrequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.igetmetadataforentityrequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a>
+								<a href="dk.ideleteentityrequest.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dk.ideleteentityrequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a>
 							</li>
 						</ul>
 					</li>
