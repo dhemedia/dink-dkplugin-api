@@ -33,7 +33,7 @@ module dk {
           Indicates if annotations option needs to be available
           Default value is true
         */
-        canAnnotate?: boolean;
+        canBeAnnotated?: boolean;
         successCallback: IShowRemotePdfDocumentSuccessFn;
         failureCallback: IShowRemotePdfDocumentFailureFn;
         /** callbackIdentifier allows you to distinguish between different callbacks */

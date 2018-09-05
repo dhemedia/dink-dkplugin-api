@@ -58,7 +58,7 @@ module dk {
         /**
         * Show a local pdf document in a pdf viewer
         * @param canBeShared indicates if file can be added to account hub, default value will depend on publication from which the document is opened
-        * @param canAnnotate indicates if annotations option needs to be available, default value is true
+        * @param canBeAnnotated indicates if annotations option needs to be available, default value is true
         */
         showPdfDocument(
             pdfName: string,
@@ -66,7 +66,7 @@ module dk {
             successCallbackFn: IShowPdfDocumentSuccessFn,
             failureCallbackFn: IShowPdfDocumentFailureFn,
             canBeShared?: boolean,
-            canAnnotate?: boolean
+            canBeAnnotated?: boolean
         ): void;
 
         /**
