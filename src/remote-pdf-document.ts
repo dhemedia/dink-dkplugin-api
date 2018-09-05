@@ -24,6 +24,16 @@ module dk {
         url: string;
         /** The page to open */
         pageNumber: number;
+        /**
+          Indicates if file can be added to account hub.
+          Default value will depend on publication from which the document is opened
+        */
+        canBeShared?: boolean;
+        /**
+          Indicates if annotations option needs to be available
+          Default value is true
+        */
+        canAnnotate?: boolean;
         successCallback: IShowRemotePdfDocumentSuccessFn;
         failureCallback: IShowRemotePdfDocumentFailureFn;
         /** callbackIdentifier allows you to distinguish between different callbacks */
