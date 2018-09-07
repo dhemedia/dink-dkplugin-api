@@ -488,6 +488,13 @@ module dk {
         ): void;
 
         /**
+        * Get picture by url.
+        */
+        pickAdditionalFilesForVisitReport(
+            obj: IPickAdditionalFilesForVisitReportRequest
+        ): void;
+
+        /**
         * Show a native alert popup
         * @param message the message to be shown
         * @param title the title of the popup
