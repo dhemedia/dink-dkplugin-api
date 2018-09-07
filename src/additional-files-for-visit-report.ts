@@ -20,8 +20,8 @@ module dk {
   }
 
   export interface IPickAdditionalFilesForVisitReportRequest {
-      successCallback: IGetPictureByUrlRequestSuccessFn;
-      failureCallback: IGetPictureByUrlRequestFailureFn;
+      successCallback: IPickAdditionalFilesForVisitReportSuccessFn;
+      failureCallback: IPickAdditionalFilesForVisitReportFailureFn;
       callbackIdentifier?: string;
   }
 
