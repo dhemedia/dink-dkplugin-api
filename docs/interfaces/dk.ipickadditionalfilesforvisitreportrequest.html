@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IShowPdfDocumentFailureFn | d!nk DKPlugin API</title>
+	<title>IPickAdditionalFilesForVisitReportRequest | d!nk DKPlugin API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,54 +59,71 @@
 					<a href="../modules/dk.html">dk</a>
 				</li>
 				<li>
-					<a href="dk.ishowpdfdocumentfailurefn.html">IShowPdfDocumentFailureFn</a>
+					<a href="dk.ipickadditionalfilesforvisitreportrequest.html">IPickAdditionalFilesForVisitReportRequest</a>
 				</li>
 			</ul>
-			<h1>Interface IShowPdfDocumentFailureFn</h1>
+			<h1>Interface IPickAdditionalFilesForVisitReportRequest</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IShowPdfDocumentFailureFn</span>
+						<span class="target">IPickAdditionalFilesForVisitReportRequest</span>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel">
-				<h3 class="tsd-before-signature">Callable</h3>
-				<ul class="tsd-signatures tsd-kind-interface tsd-parent-kind-module">
-					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/5eed730/src/pdf-document.ts#L15">pdf-document.ts:15</a></li>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ipickadditionalfilesforvisitreportrequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ipickadditionalfilesforvisitreportrequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ipickadditionalfilesforvisitreportrequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a></li>
 							</ul>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>result: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>is an error message</p>
-									</div>
-								</div>
-							</li>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="callbackidentifier" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> callback<wbr>Identifier</h3>
+					<div class="tsd-signature tsd-kind-icon">callback<wbr>Identifier<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/5eed730/src/additional-files-for-visit-report.ts#L25">additional-files-for-visit-report.ts:25</a></li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span></h4>
-					</li>
-				</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="failurecallback" class="tsd-anchor"></a>
+					<h3>failure<wbr>Callback</h3>
+					<div class="tsd-signature tsd-kind-icon">failure<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.igetpicturebyurlrequestfailurefn.html" class="tsd-signature-type">IGetPictureByUrlRequestFailureFn</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/5eed730/src/additional-files-for-visit-report.ts#L24">additional-files-for-visit-report.ts:24</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="successcallback" class="tsd-anchor"></a>
+					<h3>success<wbr>Callback</h3>
+					<div class="tsd-signature tsd-kind-icon">success<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.igetpicturebyurlrequestsuccessfn.html" class="tsd-signature-type">IGetPictureByUrlRequestSuccessFn</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/5eed730/src/additional-files-for-visit-report.ts#L23">additional-files-for-visit-report.ts:23</a></li>
+						</ul>
+					</aside>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -125,7 +142,18 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.ishowpdfdocumentfailurefn.html" class="tsd-kind-icon">IShow<wbr>Pdf<wbr>Document<wbr>Failure<wbr>Fn</a>
+						<a href="dk.ipickadditionalfilesforvisitreportrequest.html" class="tsd-kind-icon">IPick<wbr>Additional<wbr>Files<wbr>For<wbr>Visit<wbr>Report<wbr>Request</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dk.ipickadditionalfilesforvisitreportrequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dk.ipickadditionalfilesforvisitreportrequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dk.ipickadditionalfilesforvisitreportrequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">

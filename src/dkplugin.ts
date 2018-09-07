@@ -488,7 +488,7 @@ module dk {
         ): void;
 
         /**
-        * Get picture by url.
+        * Pick files that you want to add to a visit report.
         */
         pickAdditionalFilesForVisitReport(
             obj: IPickAdditionalFilesForVisitReportRequest
