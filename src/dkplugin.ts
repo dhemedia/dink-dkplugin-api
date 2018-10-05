@@ -141,6 +141,13 @@ module dk {
         ): void;
 
         /**
+        * Send an email with pdf files as attachments
+        */
+        sendEmail(
+            obj: ISendEmailRequest
+        ): void;
+
+        /**
         * Take a screenshot and save it as a file
         */
         generateImageFromScreenCapture(
