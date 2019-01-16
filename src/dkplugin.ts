@@ -17,6 +17,14 @@ module dk {
         ): void;
 
         /**
+        * Get an authentication token,
+        * only available in apps that work with SSO
+        */
+        getAuthToken(
+            obj: IAuthTokenRequest
+        ): void;
+
+        /**
         * Retrieve details about the publication
         * @param publicationReference is an identifier for the publication, pass in empty string to retrieve current publication
         */
