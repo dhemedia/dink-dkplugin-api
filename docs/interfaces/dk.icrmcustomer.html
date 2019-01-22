@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IRegisterQueueSizeChangeListenerRequest | d!nk DKPlugin API</title>
+	<title>ICrmCustomer | d!nk DKPlugin API</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/dk.html">dk</a>
 				</li>
 				<li>
-					<a href="dk.iregisterqueuesizechangelistenerrequest.html">IRegisterQueueSizeChangeListenerRequest</a>
+					<a href="dk.icrmcustomer.html">ICrmCustomer</a>
 				</li>
 			</ul>
-			<h1>Interface IRegisterQueueSizeChangeListenerRequest</h1>
+			<h1>Interface ICrmCustomer</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IRegisterQueueSizeChangeListenerRequest</span>
+						<span class="target">ICrmCustomer</span>
 					</li>
 				</ul>
 			</section>
@@ -84,10 +84,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iregisterqueuesizechangelistenerrequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iregisterqueuesizechangelistenerrequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iregisterqueuesizechangelistenerrequest.html#listener" class="tsd-kind-icon">listener</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.iregisterqueuesizechangelistenerrequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.icrmcustomer.html#email" class="tsd-kind-icon">email</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.icrmcustomer.html#firstname" class="tsd-kind-icon">first<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.icrmcustomer.html#lastname" class="tsd-kind-icon">last<wbr>Name</a></li>
 							</ul>
 						</section>
 					</div>
@@ -96,42 +95,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="callbackidentifier" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> callback<wbr>Identifier</h3>
-					<div class="tsd-signature tsd-kind-icon">callback<wbr>Identifier<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="email" class="tsd-anchor"></a>
+					<h3>email</h3>
+					<div class="tsd-signature tsd-kind-icon">email<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/ecb6dac/src/queue-size-change-listener.ts#L32">queue-size-change-listener.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/ecb6dac/src/start-meeting.ts#L26">start-meeting.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="failurecallback" class="tsd-anchor"></a>
-					<h3>failure<wbr>Callback</h3>
-					<div class="tsd-signature tsd-kind-icon">failure<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.iregisterqueuesizechangelistenerrequestfailurefn.html" class="tsd-signature-type">IRegisterQueueSizeChangeListenerRequestFailureFn</a></div>
+					<a name="firstname" class="tsd-anchor"></a>
+					<h3>first<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">first<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/ecb6dac/src/queue-size-change-listener.ts#L31">queue-size-change-listener.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/ecb6dac/src/start-meeting.ts#L24">start-meeting.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="listener" class="tsd-anchor"></a>
-					<h3>listener</h3>
-					<div class="tsd-signature tsd-kind-icon">listener<span class="tsd-signature-symbol">:</span> <a href="dk.iqueuesizechangelistenerfn.html" class="tsd-signature-type">IQueueSizeChangeListenerFn</a></div>
+					<a name="lastname" class="tsd-anchor"></a>
+					<h3>last<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">last<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/ecb6dac/src/queue-size-change-listener.ts#L33">queue-size-change-listener.ts:33</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="successcallback" class="tsd-anchor"></a>
-					<h3>success<wbr>Callback</h3>
-					<div class="tsd-signature tsd-kind-icon">success<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="dk.iregisterqueuesizechangelistenerrequestsuccessfn.html" class="tsd-signature-type">IRegisterQueueSizeChangeListenerRequestSuccessFn</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/ecb6dac/src/queue-size-change-listener.ts#L30">queue-size-change-listener.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/ecb6dac/src/start-meeting.ts#L25">start-meeting.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -153,19 +142,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="dk.iregisterqueuesizechangelistenerrequest.html" class="tsd-kind-icon">IRegister<wbr>Queue<wbr>Size<wbr>Change<wbr>Listener<wbr>Request</a>
+						<a href="dk.icrmcustomer.html" class="tsd-kind-icon">ICrm<wbr>Customer</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.iregisterqueuesizechangelistenerrequest.html#callbackidentifier" class="tsd-kind-icon">callback<wbr>Identifier</a>
+								<a href="dk.icrmcustomer.html#email" class="tsd-kind-icon">email</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.iregisterqueuesizechangelistenerrequest.html#failurecallback" class="tsd-kind-icon">failure<wbr>Callback</a>
+								<a href="dk.icrmcustomer.html#firstname" class="tsd-kind-icon">first<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.iregisterqueuesizechangelistenerrequest.html#listener" class="tsd-kind-icon">listener</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="dk.iregisterqueuesizechangelistenerrequest.html#successcallback" class="tsd-kind-icon">success<wbr>Callback</a>
+								<a href="dk.icrmcustomer.html#lastname" class="tsd-kind-icon">last<wbr>Name</a>
 							</li>
 						</ul>
 					</li>
