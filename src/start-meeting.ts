@@ -15,6 +15,17 @@ module dk {
         (result: string): null;
     }
 
+    export interface ICrmAccount {
+        name: string;
+        crmId: string;
+    }
+
+    export interface ICrmCustomer {
+        firstName: string;
+        lastName: string;
+        email: string;
+    }
+
     export interface IStartMeetingRequest {
         successCallback: IStartMeetingRequestSuccessFn;
         failureCallback: IStartMeetingRequestFailureFn;
@@ -24,6 +35,8 @@ module dk {
         name?: string;
         dinkEntityName: string;
         parentEntityId: string;
+        account?: ICrmAccount;
+        customers?: ICrmCustomer[];
     }
 
 }
