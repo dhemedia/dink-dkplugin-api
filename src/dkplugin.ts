@@ -433,6 +433,14 @@ module dk {
         ): void;
 
         /**
+        * Get entities that have not been synced.
+        * This is only available for customers who have enabled CRM integration.
+        */
+        getNonSyncedEntities(
+            obj: IGetNonSyncedEntitiesRequest
+        ): void;
+
+        /**
         * Start preparation of meeting.
         * This is only available for customers who have enabled CRM integration.
         */
