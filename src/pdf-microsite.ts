@@ -7,7 +7,7 @@ module dk{
 
   export interface IAddPdfToMicroSiteResponse extends IBasicResponse {
     /**
-      Type tells you if the pdf was sent by email, or added to account hub
+      was the pdf sent by email, or added to account hub?
     */
     type: AddPdfToMicroSiteResultType;
   }
@@ -35,7 +35,7 @@ module dk{
     publicationKey?: string;
     /** The name of the target publication, is required when publicationKey is missing*/
     publicationName?: string;
-    /* 
+    /**
       Should the native app show alerts if there is a choice between email and account hub?
       Default is false.
      */
