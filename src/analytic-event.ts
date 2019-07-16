@@ -27,5 +27,7 @@ module dk {
         callbackIdentifier?: string;
         /** Is the data considered valid input? Default is false. */
         isValid?: boolean;
+        /**  Same files as the 'ids' property we use when calling DKPlugin.syncLocalFiles, linking those files to this event */
+        files?: string[];
     }
 }
