@@ -300,10 +300,17 @@ module dk {
         ): void;
 
         /**
-        * Store a file, only available in beta versions
+        * Store a file (without picker)
         */
         storeFile(
             obj: IStoreFileRequest
+        ): void;
+
+        /**
+        * Save a file by using a file picker
+        */
+        saveFileWithPicker(
+            obj: ISaveFileWithPickerRequest
         ): void;
 
         /**
