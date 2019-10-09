@@ -127,6 +127,13 @@ module dk {
 
 
         /**
+        * Choose content sharing option
+        */
+       chooseContentSharingOption(
+            obj: IChooseContentSharingOptionRequest
+        ): void;
+
+        /**
         * Add pdf document to microsite
         */
         addPdfToMicroSite(
