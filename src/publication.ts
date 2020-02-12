@@ -49,5 +49,10 @@ module dk {
           Reference for LMS platform
         */
         referenceId?: string;
+        /**
+          Indicates if you want to hide all toolbar buttons except the close button.
+          Default value is false
+        */
+        hideToolbarButtons?: boolean;
     }
 }

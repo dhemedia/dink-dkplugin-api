@@ -1,5 +1,5 @@
 module dk {
-    
+
     export enum SimplifiedContentSharingMode {
         DISABLE_SHARING = <any>'DISABLE_SHARING',
         ACCOUNT_HUB_ONLY = <any>'ACCOUNT_HUB_ONLY',
@@ -15,7 +15,7 @@ module dk {
         contentSharingMode: SimplifiedContentSharingMode
     }
 
-    export interface IEnterpriseDetailsResponse extends IBasicResponse{
+    export interface IEnterpriseDetailsResponse extends IBasicResponse {
         enterprise: IEnterprise;
     }
 
