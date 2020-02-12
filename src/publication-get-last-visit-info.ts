@@ -14,8 +14,8 @@ module dk {
     }
 
     /**
-    @param result a json stringified IGetCurrentMeetingResponse object,
-    so you'll need to parse the json before accessing the IGetCurrentMeetingResponse properties
+    @param result a json stringified IGetLastVisitInfoResponse object,
+    so you'll need to parse the json before accessing the IGetLastVisitInfoResponse properties
     */
     export interface IGetLastVisitInfoRequestSuccessFn {
         (result: string): null;
