@@ -50,6 +50,13 @@ module dk {
         ): void;
 
         /**
+        * Get info about the last time a publication was visited
+        */
+        getLastVisitInfo(
+            obj: IGetLastVisitInfoRequest
+        ): void;
+
+        /**
         * Close current publication
         */
         closeCurrentPublication(
@@ -129,7 +136,7 @@ module dk {
         /**
         * Choose content sharing option
         */
-       chooseContentSharingOption(
+        chooseContentSharingOption(
             obj: IChooseContentSharingOptionRequest
         ): void;
 
