@@ -39,8 +39,8 @@ module dk {
         creationDateUtc: string;
         /** local time in ISO8601 format. Example: yyyy-MM-ddTHH:mm:ss+01:00 */
         creationDateLocal: string;
-        /** isOnline is true if user has internet access when creating the visit */
-        isOnline: boolean;
+        /** isOnline is true if user has internet access when creating the visit. Default is false */
+        isOnline?: boolean;
     }
 
 
