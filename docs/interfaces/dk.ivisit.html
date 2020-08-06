@@ -89,6 +89,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ivisit.html#creationdateutc" class="tsd-kind-icon">creation<wbr>Date<wbr>Utc</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ivisit.html#duration" class="tsd-kind-icon">duration</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ivisit.html#iscomplete" class="tsd-kind-icon">is<wbr>Complete</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ivisit.html#isonline" class="tsd-kind-icon">is<wbr>Online</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ivisit.html#magazineid" class="tsd-kind-icon">magazine<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ivisit.html#reference" class="tsd-kind-icon">reference</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="dk.ivisit.html#stories" class="tsd-kind-icon">stories</a></li>
@@ -106,7 +107,7 @@
 					<div class="tsd-signature tsd-kind-icon">creation<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/f1b0a42/src/record-stat.ts#L37">record-stat.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/909c22e/src/record-stat.ts#L37">record-stat.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -121,7 +122,7 @@
 					<div class="tsd-signature tsd-kind-icon">creation<wbr>Date<wbr>Local<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/f1b0a42/src/record-stat.ts#L41">record-stat.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/909c22e/src/record-stat.ts#L41">record-stat.ts:41</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -136,7 +137,7 @@
 					<div class="tsd-signature tsd-kind-icon">creation<wbr>Date<wbr>Utc<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/f1b0a42/src/record-stat.ts#L39">record-stat.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/909c22e/src/record-stat.ts#L39">record-stat.ts:39</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -151,7 +152,7 @@
 					<div class="tsd-signature tsd-kind-icon">duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/f1b0a42/src/record-stat.ts#L33">record-stat.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/909c22e/src/record-stat.ts#L33">record-stat.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -161,12 +162,27 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Complete<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/f1b0a42/src/record-stat.ts#L35">record-stat.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/909c22e/src/record-stat.ts#L35">record-stat.ts:35</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>isComplete is true when someone leaves the publication</p>
+							<p>isComplete is true when someone exits the publication</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="isonline" class="tsd-anchor"></a>
+					<h3>is<wbr>Online</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Online<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/909c22e/src/record-stat.ts#L43">record-stat.ts:43</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>isOnline is true if user has internet access when creating the visit</p>
 						</div>
 					</div>
 				</section>
@@ -176,7 +192,7 @@
 					<div class="tsd-signature tsd-kind-icon">magazine<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/f1b0a42/src/record-stat.ts#L27">record-stat.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/909c22e/src/record-stat.ts#L27">record-stat.ts:27</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -191,7 +207,7 @@
 					<div class="tsd-signature tsd-kind-icon">reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/f1b0a42/src/record-stat.ts#L32">record-stat.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/909c22e/src/record-stat.ts#L32">record-stat.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -206,7 +222,7 @@
 					<div class="tsd-signature tsd-kind-icon">stories<span class="tsd-signature-symbol">:</span> <a href="dk.istat.html" class="tsd-signature-type">IStat</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/f1b0a42/src/record-stat.ts#L30">record-stat.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/909c22e/src/record-stat.ts#L30">record-stat.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -216,7 +232,7 @@
 					<div class="tsd-signature tsd-kind-icon">subscriber<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/f1b0a42/src/record-stat.ts#L29">record-stat.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/dhemedia/dink-dkplugin-api/blob/909c22e/src/record-stat.ts#L29">record-stat.ts:29</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -259,6 +275,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="dk.ivisit.html#iscomplete" class="tsd-kind-icon">is<wbr>Complete</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="dk.ivisit.html#isonline" class="tsd-kind-icon">is<wbr>Online</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="dk.ivisit.html#magazineid" class="tsd-kind-icon">magazine<wbr>Id</a>
