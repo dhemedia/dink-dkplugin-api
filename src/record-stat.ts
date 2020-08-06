@@ -31,7 +31,7 @@ module dk {
         /** the identifier of this specific visit, set when opening a publication */
         reference: string;
         duration: number;
-        /** isComplete is true when someone leaves the publication */
+        /** isComplete is true when someone exits the publication */
         isComplete: boolean;
         /** formatted creation date yyyy-MM-dd HH:mm:ss.sss */
         creationDate: string;
@@ -39,6 +39,8 @@ module dk {
         creationDateUtc: string;
         /** local time in ISO8601 format. Example: yyyy-MM-ddTHH:mm:ss+01:00 */
         creationDateLocal: string;
+        /** isOnline is true if user has internet access when creating the visit */
+        isOnline: boolean;
     }
 
 
