@@ -12,6 +12,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "typedoc": "^0.14.2"
+    "typedoc": "^0.21.2"
   }
 }
